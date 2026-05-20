@@ -24,6 +24,7 @@ for minute_idx, frame in enumerate(frames):
             'gold': stats['totalGold']
         })
 
+
 # Create the table
 df = pd.DataFrame(all_rows)
 

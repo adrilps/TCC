@@ -1,6 +1,6 @@
 import requests
 
-api_key = "RGAPI-43c7d27b-0db0-4c8b-843c-0d0bba963fc0"
+api_key = "RGAPI-af8a2a12-97fa-4dd1-ba7b-0d039133974d"
 server = "BR1"
 match_id = "3223766563"
 region = "americas"
