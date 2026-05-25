@@ -8,24 +8,26 @@ def init_db():
     conn = get_connection()
     cursor = conn.cursor()
     
-    # TABLE 1: Added target_player_team_id and target_player_won
+    # TABLE 1: Added Player IDs and Role
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS matches (
             match_id VARCHAR(50) PRIMARY KEY,
+            game_version VARCHAR(20),
             game_duration_sec INT,
             winner_team_id INT,
             target_player_team_id INT,
             target_player_won BOOLEAN,
+            role VARCHAR(20),
+            target_pid INT,
+            enemy_pid INT,
             blue_total_gold INT,
             red_total_gold INT,
-            blue_total_kills INT,
-            red_total_kills INT,
             blue_dragons INT,
             red_dragons INT
         );
     """)
 
-    # TABLE 2: Minute-by-Minute Telemetry
+    # TABLE 2: Added 1v1 Matchup Stats
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS match_timeline (
             id SERIAL PRIMARY KEY,
@@ -33,65 +35,66 @@ def init_db():
             game_minute INT,
             team_100_gold INT,
             team_200_gold INT,
-            gold_diff INT,
-            team_100_xp INT,
-            team_200_xp INT,
-            team_100_kills INT,
-            team_200_kills INT,
+            player_gold INT,
+            enemy_gold INT,
+            player_xp INT,
+            enemy_xp INT,
+            player_kills INT,
+            player_deaths INT,
+            player_assists INT,
             UNIQUE(match_id, game_minute)
         );
     """)
     conn.commit()
     cursor.close()
     conn.close()
-    print("[DB] Advanced storage matrix initialized.")
 
 def save_match_summary(conn, match_data, target_puuid):
-    """Upserts the high-level match results and identifies the target player."""
+    """Upserts the high-level match results and identifies the 1v1 matchup."""
     info = match_data['info']
     match_id = match_data['metadata']['matchId']
     duration = info['gameDuration']
     
-    # Safely extract teams
+    raw_version = info.get('gameVersion', 'Unknown')
+    game_version = ".".join(raw_version.split('.')[:2]) if raw_version != 'Unknown' else raw_version
+    
     teams = info.get('teams', [])
     blue_team = next((t for t in teams if t['teamId'] == 100), None)
     red_team = next((t for t in teams if t['teamId'] == 200), None)
     
-    # If the game doesn't have standard Blue/Red teams (like Arena mode), skip it
     if not blue_team or not red_team:
-        print(f"[-] Skipping {match_id}: Not a standard 5v5 mode.")
         return False
     
     winner = 100 if blue_team.get('win') else 200
-    
-    # Safe objective extraction (ARAM doesn't have dragons)
     blue_dragons = blue_team.get('objectives', {}).get('dragon', {}).get('kills', 0)
     red_dragons = red_team.get('objectives', {}).get('dragon', {}).get('kills', 0)
     
     blue_gold = sum(p['goldEarned'] for p in info['participants'] if p['teamId'] == 100)
     red_gold = sum(p['goldEarned'] for p in info['participants'] if p['teamId'] == 200)
-    blue_kills = sum(p['kills'] for p in info['participants'] if p['teamId'] == 100)
-    red_kills = sum(p['kills'] for p in info['participants'] if p['teamId'] == 200)
 
-    # Find the target player's team and if they won
-    target_player_team_id = None
-    target_player_won = False
+    # --- ADVANCED LOGIC: Find Target Player and Enemy Matchup ---
+    target_player = next((p for p in info['participants'] if p['puuid'] == target_puuid), None)
+    if not target_player:
+        return False
+
+    target_pid = target_player['participantId']
+    role = target_player.get('teamPosition', 'UNKNOWN')
+    target_player_team_id = target_player['teamId']
+    target_player_won = (target_player_team_id == winner)
     
-    for player in info['participants']:
-        if player['puuid'] == target_puuid:
-            target_player_team_id = player['teamId']
-            target_player_won = (target_player_team_id == winner)
-            break
+    # Find the enemy with the exact same role
+    enemy_player = next((p for p in info['participants'] if p['teamPosition'] == role and p['participantId'] != target_pid), None)
+    enemy_pid = enemy_player['participantId'] if enemy_player else None
 
     cursor = conn.cursor()
     cursor.execute("""
         INSERT INTO matches 
-        (match_id, game_duration_sec, winner_team_id, target_player_team_id, target_player_won, 
-         blue_total_gold, red_total_gold, blue_total_kills, red_total_kills, blue_dragons, red_dragons)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        (match_id, game_version, game_duration_sec, winner_team_id, target_player_team_id, target_player_won, 
+         role, target_pid, enemy_pid, blue_total_gold, red_total_gold, blue_dragons, red_dragons)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (match_id) DO NOTHING;
-    """, (match_id, duration, winner, target_player_team_id, target_player_won, 
-          blue_gold, red_gold, blue_kills, red_kills, blue_dragons, red_dragons))
+    """, (match_id, game_version, duration, winner, target_player_team_id, target_player_won, 
+          role, target_pid, enemy_pid, blue_gold, red_gold, blue_dragons, red_dragons))
     
     cursor.close()
-    return True
+    return {'target_pid': target_pid, 'enemy_pid': enemy_pid} # Return IDs to the timeline processor

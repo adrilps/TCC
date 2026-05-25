@@ -1,0 +1,72 @@
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 30m 30s
+**Final Objectives:** Team Dragons: 1 | Enemy Dragons: 4
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -217 Gold, -64 XP
+  - Macro (Team): -1453 Overall Gold
+  - Player KDA: 0/0/1
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -1748 Gold, -910 XP
+  - Macro (Team): -3930 Overall Gold
+  - Player KDA: 0/3/2
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -742 Gold, +1959 XP
+  - Macro (Team): +7893 Overall Gold
+  - Player KDA: 1/5/6
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): +2039 Gold, +3797 XP
+  - Macro (Team): -469 Overall Gold
+  - Player KDA: 4/1/9
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -3936 Gold, -1994 XP
+  - Macro (Team): -9975 Overall Gold
+  - Player KDA: 4/6/7
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -524 Gold, +910 XP
+  - Macro (Team): +3124 Overall Gold
+  - Player KDA: 1/3/6
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -4051 Gold, -474 XP
+  - Macro (Team): -721 Overall Gold
+  - Player KDA: 4/5/4
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -477 Gold, -1161 XP
+  - Macro (Team): -1550 Overall Gold
+  - Player KDA: 2/7/17
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -6410 Gold, -2919 XP
+  - Macro (Team): -6632 Overall Gold
+  - Player KDA: 1/7/5
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): +515 Gold, -161 XP
+  - Macro (Team): -10167 Overall Gold
+  - Player KDA: 6/6/4
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -1288 Gold, +1036 XP
+  - Macro (Team): +3971 Overall Gold
+  - Player KDA: 7/4/10
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -1221 Gold, -29 XP
+  - Macro (Team): -3042 Overall Gold
+  - Player KDA: 6/2/7
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -2697 Gold, +416 XP
+  - Macro (Team): +7979 Overall Gold
+  - Player KDA: 5/4/13
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): +1946 Gold, -425 XP
+  - Macro (Team): -2662 Overall Gold
+  - Player KDA: 6/2/5

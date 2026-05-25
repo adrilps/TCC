@@ -1,7 +1,7 @@
 import os
 
 # Riot API Key
-RIOT_API_KEY = "RGAPI-ffdfe0f7-1250-4bb7-b49b-f1fd4240e4be"
+RIOT_API_KEY = "RGAPI-304beec9-b870-427a-a0d3-af7d3e2967b4"
 
 # Target Player Settings
 GAME_NAME = "ignacarious"

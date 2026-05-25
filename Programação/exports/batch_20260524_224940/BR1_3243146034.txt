@@ -1,0 +1,19 @@
+### League of Legends Match Data: BR1_3243146034
+**Target Player Result:** LOST (Played on Red (200) team)
+**Game Duration:** 30 minutes and 30 seconds
+**Objectives:** Blue Team Dragons: 4 | Red Team Dragons: 1
+**Final Gold:** Blue: 65521 | Red: 55546
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 152 | 1 | 1 |
+| 10 | 1453 | 5 | 2 |
+| 15 | 3930 | 14 | 7 |
+| 20 | 4048 | 19 | 13 |
+| 25 | 4926 | 25 | 18 |
+| 30 | 9576 | 33 | 19 |
+| 31 | 9975 | 36 | 21 |

@@ -15,9 +15,11 @@ class RiotAPIClient:
             return None
         return response.json().get("puuid")
 
-    def get_recent_matches(self, puuid, count=20):
-        """Fetches list pointers referencing recent match records."""
-        url = f"{config.MATCH_HISTORY_URL}/{puuid}/ids?start=0&count={count}&api_key={self.api_key}"
+    def get_recent_matches(self, puuid, count=20, queue_id=420):
+        """Fetches list pointers referencing recent match records, filtered by queue."""
+        # queue=420 is Ranked Solo/Duo. (440 is Flex, 400 is Normal Draft)
+        url = f"{config.MATCH_HISTORY_URL}/{puuid}/ids?queue={queue_id}&start=0&count={count}&api_key={self.api_key}"
+        
         response = requests.get(url)
         if response.status_code != 200:
             print(f"[API ERROR] Match index extraction failed with code {response.status_code}")

@@ -1,0 +1,97 @@
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 26m 30s
+**Final Objectives:** Team Dragons: 0 | Enemy Dragons: 4
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -114 Gold, -462 XP
+  - Macro (Team): +1096 Overall Gold
+  - Player KDA: 1/0/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +6 Gold, -349 XP
+  - Macro (Team): +1776 Overall Gold
+  - Player KDA: 1/0/1
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): +2048 Gold, +1131 XP
+  - Macro (Team): -438 Overall Gold
+  - Player KDA: 5/2/5
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -808 Gold, +1087 XP
+  - Macro (Team): +6267 Overall Gold
+  - Player KDA: 1/4/5
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): +1201 Gold, +2557 XP
+  - Macro (Team): +3470 Overall Gold
+  - Player KDA: 3/2/12
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): +1139 Gold, +1427 XP
+  - Macro (Team): -3432 Overall Gold
+  - Player KDA: 4/1/4
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -2396 Gold, -881 XP
+  - Macro (Team): -6574 Overall Gold
+  - Player KDA: 2/4/7
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -394 Gold, +490 XP
+  - Macro (Team): +3460 Overall Gold
+  - Player KDA: 1/2/6
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -3271 Gold, -1102 XP
+  - Macro (Team): -1002 Overall Gold
+  - Player KDA: 2/4/3
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): +1592 Gold, +2337 XP
+  - Macro (Team): +5491 Overall Gold
+  - Player KDA: 6/3/11
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): +611 Gold, +105 XP
+  - Macro (Team): -4947 Overall Gold
+  - Player KDA: 2/5/15
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -5466 Gold, -2812 XP
+  - Macro (Team): -6911 Overall Gold
+  - Player KDA: 1/4/2
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -3393 Gold, -3278 XP
+  - Macro (Team): -11895 Overall Gold
+  - Player KDA: 1/2/5
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -2837 Gold, -1905 XP
+  - Macro (Team): -14902 Overall Gold
+  - Player KDA: 2/5/3
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -2487 Gold, +745 XP
+  - Macro (Team): +1679 Overall Gold
+  - Player KDA: 3/4/10
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): +2204 Gold, +1071 XP
+  - Macro (Team): +12312 Overall Gold
+  - Player KDA: 11/1/9
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -7323 Gold, -4393 XP
+  - Macro (Team): -8079 Overall Gold
+  - Player KDA: 2/11/8
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -2562 Gold, -739 XP
+  - Macro (Team): +2741 Overall Gold
+  - Player KDA: 3/4/10
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -1624 Gold, -298 XP
+  - Macro (Team): -4142 Overall Gold
+  - Player KDA: 4/2/6

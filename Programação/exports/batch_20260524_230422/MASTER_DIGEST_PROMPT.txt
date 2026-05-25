@@ -1,0 +1,470 @@
+# League of Legends Match History Analysis
+**Target Player:** ignacarious#smo
+**Total Matches Provided:** 20
+
+---
+
+### System Instructions for the AI:
+1. Analyze the timeline data across all provided matches.
+2. Identify patterns that correlate with the Target Player winning or losing.
+3. Look for 'turning points' (e.g., massive swings in gold differential or objective control).
+4. Format your output as a data analyst report, highlighting key win-conditions and fail-states.
+
+---
+
+## GAME 1
+### League of Legends Match Data: BR1_3244861689
+**Target Player Result:** LOST (Played on Red (200) team)
+**Game Duration:** 27 minutes and 59 seconds
+**Objectives:** Blue Team Dragons: 2 | Red Team Dragons: 1
+**Final Gold:** Blue: 64398 | Red: 55248
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 875 | 5 | 4 |
+| 10 | 243 | 11 | 8 |
+| 15 | -726 | 18 | 16 |
+| 20 | 2713 | 30 | 21 |
+| 25 | 2313 | 37 | 28 |
+| 28 | 9150 | 47 | 30 |
+
+---
+
+## GAME 2
+### League of Legends Match Data: BR1_3244140613
+**Target Player Result:** WON (Played on Red (200) team)
+**Game Duration:** 39 minutes and 41 seconds
+**Objectives:** Blue Team Dragons: 2 | Red Team Dragons: 4
+**Final Gold:** Blue: 75639 | Red: 84752
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 720 | 1 | 1 |
+| 10 | 1379 | 5 | 8 |
+| 15 | 1731 | 9 | 13 |
+| 20 | 6227 | 17 | 17 |
+| 25 | 6957 | 20 | 22 |
+| 30 | 3408 | 23 | 28 |
+| 35 | -628 | 28 | 39 |
+| 40 | -9113 | 28 | 50 |
+
+---
+
+## GAME 3
+### League of Legends Match Data: BR1_3243667506
+**Target Player Result:** LOST (Played on Blue (100) team)
+**Game Duration:** 23 minutes and 0 seconds
+**Objectives:** Blue Team Dragons: 0 | Red Team Dragons: 3
+**Final Gold:** Blue: 35467 | Red: 45916
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -171 | 3 | 2 |
+| 10 | 824 | 8 | 4 |
+| 15 | -671 | 9 | 6 |
+| 20 | -5139 | 11 | 12 |
+| 23 | -10449 | 11 | 17 |
+
+---
+
+## GAME 4
+### League of Legends Match Data: BR1_3243653666
+**Target Player Result:** LOST (Played on Red (200) team)
+**Game Duration:** 39 minutes and 42 seconds
+**Objectives:** Blue Team Dragons: 3 | Red Team Dragons: 2
+**Final Gold:** Blue: 86187 | Red: 77662
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -401 | 0 | 2 |
+| 10 | -483 | 2 | 4 |
+| 15 | -909 | 6 | 8 |
+| 20 | 701 | 10 | 10 |
+| 25 | -1551 | 13 | 20 |
+| 30 | 1600 | 18 | 23 |
+| 35 | 6977 | 29 | 27 |
+| 40 | 8525 | 36 | 34 |
+
+---
+
+## GAME 5
+### League of Legends Match Data: BR1_3243643081
+**Target Player Result:** LOST (Played on Blue (100) team)
+**Game Duration:** 33 minutes and 45 seconds
+**Objectives:** Blue Team Dragons: 0 | Red Team Dragons: 4
+**Final Gold:** Blue: 57299 | Red: 70366
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -225 | 2 | 2 |
+| 10 | -489 | 4 | 4 |
+| 15 | -3767 | 6 | 11 |
+| 20 | -7229 | 9 | 17 |
+| 25 | -7854 | 13 | 21 |
+| 30 | -7093 | 17 | 23 |
+| 34 | -13067 | 18 | 31 |
+
+---
+
+## GAME 6
+### League of Legends Match Data: BR1_3243437924
+**Target Player Result:** WON (Played on Blue (100) team)
+**Game Duration:** 29 minutes and 46 seconds
+**Objectives:** Blue Team Dragons: 3 | Red Team Dragons: 2
+**Final Gold:** Blue: 59287 | Red: 58325
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -1305 | 2 | 4 |
+| 10 | -4331 | 3 | 9 |
+| 15 | -5379 | 7 | 15 |
+| 20 | -2660 | 16 | 20 |
+| 25 | -2760 | 23 | 24 |
+| 30 | 962 | 32 | 28 |
+
+---
+
+## GAME 7
+### League of Legends Match Data: BR1_3243408911
+**Target Player Result:** WON (Played on Red (200) team)
+**Game Duration:** 33 minutes and 45 seconds
+**Objectives:** Blue Team Dragons: 4 | Red Team Dragons: 1
+**Final Gold:** Blue: 60601 | Red: 65262
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 971 | 1 | 1 |
+| 10 | 2170 | 3 | 2 |
+| 15 | 2136 | 6 | 5 |
+| 20 | 5033 | 8 | 5 |
+| 25 | 4441 | 10 | 7 |
+| 30 | 1290 | 13 | 17 |
+| 34 | -4661 | 16 | 29 |
+
+---
+
+## GAME 8
+### League of Legends Match Data: BR1_3243146034
+**Target Player Result:** LOST (Played on Red (200) team)
+**Game Duration:** 30 minutes and 30 seconds
+**Objectives:** Blue Team Dragons: 4 | Red Team Dragons: 1
+**Final Gold:** Blue: 65521 | Red: 55546
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 152 | 1 | 1 |
+| 10 | 1453 | 5 | 2 |
+| 15 | 3930 | 14 | 7 |
+| 20 | 4048 | 19 | 13 |
+| 25 | 4926 | 25 | 18 |
+| 30 | 9576 | 33 | 19 |
+| 31 | 9975 | 36 | 21 |
+
+---
+
+## GAME 9
+### League of Legends Match Data: BR1_3243121333
+**Target Player Result:** WON (Played on Blue (100) team)
+**Game Duration:** 15 minutes and 23 seconds
+**Objectives:** Blue Team Dragons: 1 | Red Team Dragons: 1
+**Final Gold:** Blue: 29931 | Red: 23806
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 905 | 2 | 0 |
+| 10 | 3027 | 8 | 1 |
+| 15 | 6726 | 17 | 5 |
+| 16 | 6125 | 17 | 6 |
+
+---
+
+## GAME 10
+### League of Legends Match Data: BR1_3243087593
+**Target Player Result:** WON (Played on Blue (100) team)
+**Game Duration:** 46 minutes and 36 seconds
+**Objectives:** Blue Team Dragons: 6 | Red Team Dragons: 1
+**Final Gold:** Blue: 103709 | Red: 99778
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 512 | 4 | 1 |
+| 10 | 581 | 11 | 6 |
+| 15 | -177 | 17 | 10 |
+| 20 | 844 | 25 | 15 |
+| 25 | -79 | 32 | 21 |
+| 30 | -2751 | 37 | 27 |
+| 35 | -4370 | 41 | 32 |
+| 40 | -2647 | 48 | 37 |
+| 45 | 1815 | 60 | 43 |
+| 47 | 3931 | 67 | 47 |
+
+---
+
+## GAME 11
+### League of Legends Match Data: BR1_3243061879
+**Target Player Result:** WON (Played on Red (200) team)
+**Game Duration:** 36 minutes and 55 seconds
+**Objectives:** Blue Team Dragons: 3 | Red Team Dragons: 2
+**Final Gold:** Blue: 77137 | Red: 83165
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 427 | 3 | 2 |
+| 10 | 2882 | 10 | 5 |
+| 15 | 1189 | 14 | 12 |
+| 20 | -1524 | 19 | 21 |
+| 25 | -240 | 25 | 27 |
+| 30 | 455 | 33 | 36 |
+| 35 | -2975 | 38 | 44 |
+| 37 | -6028 | 40 | 49 |
+
+---
+
+## GAME 12
+### League of Legends Match Data: BR1_3243021498
+**Target Player Result:** WON (Played on Red (200) team)
+**Game Duration:** 23 minutes and 26 seconds
+**Objectives:** Blue Team Dragons: 0 | Red Team Dragons: 3
+**Final Gold:** Blue: 37922 | Red: 50080
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -1159 | 0 | 1 |
+| 10 | -2647 | 2 | 7 |
+| 15 | -6539 | 6 | 16 |
+| 20 | -9475 | 12 | 28 |
+| 24 | -12158 | 13 | 34 |
+
+---
+
+## GAME 13
+### League of Legends Match Data: BR1_3243008277
+**Target Player Result:** WON (Played on Red (200) team)
+**Game Duration:** 28 minutes and 47 seconds
+**Objectives:** Blue Team Dragons: 2 | Red Team Dragons: 2
+**Final Gold:** Blue: 56673 | Red: 65284
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -128 | 1 | 1 |
+| 10 | 1563 | 8 | 4 |
+| 15 | 2129 | 16 | 10 |
+| 20 | 517 | 22 | 18 |
+| 25 | -3096 | 25 | 29 |
+| 29 | -8611 | 28 | 40 |
+
+---
+
+## GAME 14
+### League of Legends Match Data: BR1_3242947158
+**Target Player Result:** WON (Played on Blue (100) team)
+**Game Duration:** 34 minutes and 53 seconds
+**Objectives:** Blue Team Dragons: 4 | Red Team Dragons: 1
+**Final Gold:** Blue: 71237 | Red: 67014
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 540 | 2 | 1 |
+| 10 | 2365 | 6 | 2 |
+| 15 | 3686 | 11 | 7 |
+| 20 | 5592 | 16 | 8 |
+| 25 | 6048 | 23 | 14 |
+| 30 | 3436 | 29 | 23 |
+| 35 | 4223 | 35 | 30 |
+
+---
+
+## GAME 15
+### League of Legends Match Data: BR1_3242924162
+**Target Player Result:** LOST (Played on Red (200) team)
+**Game Duration:** 39 minutes and 56 seconds
+**Objectives:** Blue Team Dragons: 4 | Red Team Dragons: 1
+**Final Gold:** Blue: 84718 | Red: 78304
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 207 | 2 | 1 |
+| 10 | -233 | 4 | 2 |
+| 15 | 39 | 12 | 7 |
+| 20 | 2875 | 18 | 8 |
+| 25 | 7273 | 28 | 10 |
+| 30 | 8739 | 37 | 13 |
+| 35 | 5780 | 48 | 24 |
+| 40 | 6414 | 57 | 33 |
+
+---
+
+## GAME 16
+### League of Legends Match Data: BR1_3242766740
+**Target Player Result:** LOST (Played on Red (200) team)
+**Game Duration:** 26 minutes and 30 seconds
+**Objectives:** Blue Team Dragons: 4 | Red Team Dragons: 0
+**Final Gold:** Blue: 55449 | Red: 43554
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 32 | 1 | 2 |
+| 10 | -1096 | 2 | 6 |
+| 15 | -1776 | 4 | 9 |
+| 20 | -296 | 10 | 16 |
+| 25 | 7147 | 17 | 17 |
+| 27 | 11895 | 23 | 19 |
+
+---
+
+## GAME 17
+### League of Legends Match Data: BR1_3242741653
+**Target Player Result:** LOST (Played on Red (200) team)
+**Game Duration:** 39 minutes and 4 seconds
+**Objectives:** Blue Team Dragons: 4 | Red Team Dragons: 2
+**Final Gold:** Blue: 84053 | Red: 73943
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | 1018 | 3 | 1 |
+| 10 | 3460 | 8 | 1 |
+| 15 | 7363 | 15 | 2 |
+| 20 | 8871 | 23 | 7 |
+| 25 | 13983 | 31 | 8 |
+| 30 | 10743 | 38 | 16 |
+| 35 | 6925 | 40 | 21 |
+| 40 | 10110 | 46 | 24 |
+
+---
+
+## GAME 18
+### League of Legends Match Data: BR1_3242723283
+**Target Player Result:** WON (Played on Red (200) team)
+**Game Duration:** 34 minutes and 44 seconds
+**Objectives:** Blue Team Dragons: 2 | Red Team Dragons: 3
+**Final Gold:** Blue: 64408 | Red: 68068
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -112 | 1 | 1 |
+| 10 | -678 | 3 | 4 |
+| 15 | 125 | 7 | 10 |
+| 20 | 1252 | 12 | 14 |
+| 25 | -257 | 17 | 23 |
+| 30 | -2357 | 19 | 29 |
+| 35 | -3660 | 22 | 39 |
+
+---
+
+## GAME 19
+### League of Legends Match Data: BR1_3242437857
+**Target Player Result:** WON (Played on Red (200) team)
+**Game Duration:** 27 minutes and 59 seconds
+**Objectives:** Blue Team Dragons: 1 | Red Team Dragons: 3
+**Final Gold:** Blue: 49120 | Red: 60629
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -2017 | 1 | 5 |
+| 10 | -3975 | 3 | 11 |
+| 15 | -6905 | 5 | 18 |
+| 20 | -9850 | 8 | 25 |
+| 25 | -10227 | 11 | 33 |
+| 28 | -11509 | 16 | 39 |
+
+---
+
+## GAME 20
+### League of Legends Match Data: BR1_3242416611
+**Target Player Result:** WON (Played on Red (200) team)
+**Game Duration:** 30 minutes and 47 seconds
+**Objectives:** Blue Team Dragons: 1 | Red Team Dragons: 3
+**Final Gold:** Blue: 60766 | Red: 68745
+
+### Match Timeline (Snapshot every 5 minutes)
+*Note: Gold Diff is calculated as (Blue Gold - Red Gold). Positive means Blue is winning, negative means Red is winning.*
+
+| Minute | Gold Diff | Blue Kills | Red Kills |
+|---|---|---|---|
+| 0 | 0 | 0 | 0 |
+| 5 | -545 | 0 | 2 |
+| 10 | -983 | 4 | 7 |
+| 15 | 1336 | 12 | 12 |
+| 20 | -600 | 20 | 22 |
+| 25 | -3158 | 22 | 30 |
+| 30 | -7032 | 25 | 39 |
+| 31 | -7979 | 27 | 43 |
+
+---
+

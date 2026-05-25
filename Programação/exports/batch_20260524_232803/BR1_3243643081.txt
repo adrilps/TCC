@@ -1,0 +1,49 @@
+**Result:** LOST | **Patch:** 16.10 | **Role:** UTILITY | **Duration:** 33m 45s
+
+* **Minute 10 (Early Game):**
+  - Lane Matchup: -493 Gold Diff, -197 XP Diff.
+  - Player KDA: 0/1/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Lane Matchup: -888 Gold Diff, -909 XP Diff.
+  - Player KDA: 0/3/0
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: -1086 Gold Diff, +208 XP Diff.
+  - Player KDA: 1/6/6
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: +3860 Gold Diff, +5195 XP Diff.
+  - Player KDA: 7/1/11
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: -740 Gold Diff, +917 XP Diff.
+  - Player KDA: 1/3/6
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: -4746 Gold Diff, -394 XP Diff.
+  - Player KDA: 4/6/7
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: -828 Gold Diff, -1040 XP Diff.
+  - Player KDA: 2/7/19
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: -6660 Gold Diff, -3314 XP Diff.
+  - Player KDA: 2/9/9
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: +2745 Gold Diff, +2003 XP Diff.
+  - Player KDA: 10/6/4
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: -1279 Gold Diff, -632 XP Diff.
+  - Player KDA: 7/2/9
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: -926 Gold Diff, +98 XP Diff.
+  - Player KDA: 12/5/10
+
+* **Minute 34 (Final Game State):**
+  - Lane Matchup: +3883 Gold Diff, +1238 XP Diff.
+  - Player KDA: 8/3/5
