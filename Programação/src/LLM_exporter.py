@@ -7,26 +7,33 @@ def get_match_as_text(match_id):
     conn = psycopg2.connect(config.DB_URI)
     cursor = conn.cursor()
     
-    # 1. Fetch Summary (Added team ID and Dragons for Macro context)
+    # 1. Fetch Summary (Now including Barons and Towers)
     cursor.execute("""
-        SELECT game_version, game_duration_sec, role, target_player_won, target_player_team_id, blue_dragons, red_dragons
+        SELECT game_version, game_duration_sec, role, target_player_won, target_player_team_id, 
+               blue_dragons, red_dragons, blue_barons, red_barons, blue_towers, red_towers
         FROM matches WHERE match_id = %s;
     """, (match_id,))
     summary = cursor.fetchone()
     if not summary: return f"Match not found."
     
-    version, duration, role, won, team_id, b_drags, r_drags = summary
+    version, duration, role, won, team_id, b_drags, r_drags, b_barons, r_barons, b_towers, r_towers = summary
     result = "WON" if won else "LOST"
     
     # Calculate Team Objective Control
     player_drags = b_drags if team_id == 100 else r_drags
     enemy_drags = r_drags if team_id == 100 else b_drags
     
+    player_barons = b_barons if team_id == 100 else r_barons
+    enemy_barons = r_barons if team_id == 100 else b_barons
+    
+    player_towers = b_towers if team_id == 100 else r_towers
+    enemy_towers = r_towers if team_id == 100 else b_towers
+    
     # 2. Fetch Milestones
     cursor.execute("""
         SELECT game_minute, team_100_gold, team_200_gold, player_gold, enemy_gold, player_xp, enemy_xp, player_kills, player_deaths, player_assists
         FROM match_timeline
-        WHERE match_id = %s AND game_minute IN (10, 15) OR game_minute = (SELECT MAX(game_minute) FROM match_timeline WHERE match_id = %s)
+        WHERE match_id = %s AND (game_minute IN (10, 15) OR game_minute = (SELECT MAX(game_minute) FROM match_timeline WHERE match_id = %s))
         ORDER BY game_minute;
     """, (match_id, match_id))
     
@@ -36,22 +43,17 @@ def get_match_as_text(match_id):
 
     # 3. Build the Scouting Report
     prompt = f"**Result:** {result} | **Patch:** {version} | **Role:** {role} | **Duration:** {duration//60}m {duration%60}s\n"
-    prompt += f"**Final Objectives:** Team Dragons: {player_drags} | Enemy Dragons: {enemy_drags}\n"
+    prompt += f"**Final Objectives:**\n"
+    prompt += f"  - Team: {player_towers} Towers, {player_drags} Dragons, {player_barons} Barons\n"
+    prompt += f"  - Enemy: {enemy_towers} Towers, {enemy_drags} Dragons, {enemy_barons} Barons\n"
     
     for row in milestones:
         minute, b_gold, r_gold, p_gold, e_gold, p_xp, e_xp, kills, deaths, assists = row
         
-        # Micro Calculations
         gold_delta = p_gold - e_gold
         xp_delta = p_xp - e_xp
-        
-        # Macro Calculations (Oriented to Target Player's Team)
-        if team_id == 100:
-            team_delta = b_gold - r_gold
-        else:
-            team_delta = r_gold - b_gold
+        team_delta = b_gold - r_gold if team_id == 100 else r_gold - b_gold
             
-        # Formatting
         gold_str = f"+{gold_delta}" if gold_delta > 0 else str(gold_delta)
         xp_str = f"+{xp_delta}" if xp_delta > 0 else str(xp_delta)
         team_str = f"+{team_delta}" if team_delta > 0 else str(team_delta)
@@ -68,7 +70,10 @@ def get_match_as_text(match_id):
 def export_latest_batch(limit=20):
     """Fetches the latest matches, exports them individually, and creates a Master Digest."""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    batch_folder = os.path.join("exports", f"batch_{timestamp}")
+    
+    # Grab the player name and make it folder-safe
+    safe_player_name = config.GAME_NAME.replace(" ", "_")
+    batch_folder = os.path.join("exports", f"{safe_player_name}_batch_{timestamp}")
     
     conn = psycopg2.connect(config.DB_URI)
     cursor = conn.cursor()

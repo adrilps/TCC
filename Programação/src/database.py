@@ -8,7 +8,7 @@ def init_db():
     conn = get_connection()
     cursor = conn.cursor()
     
-    # TABLE 1: Added Player IDs and Role
+    # Added Barons and Towers to the schema
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS matches (
             match_id VARCHAR(50) PRIMARY KEY,
@@ -23,11 +23,14 @@ def init_db():
             blue_total_gold INT,
             red_total_gold INT,
             blue_dragons INT,
-            red_dragons INT
+            red_dragons INT,
+            blue_barons INT,
+            red_barons INT,
+            blue_towers INT,
+            red_towers INT
         );
     """)
 
-    # TABLE 2: Added 1v1 Matchup Stats
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS match_timeline (
             id SERIAL PRIMARY KEY,
@@ -66,13 +69,21 @@ def save_match_summary(conn, match_data, target_puuid):
         return False
     
     winner = 100 if blue_team.get('win') else 200
+    
+    # --- MACRO STAT EXTRACTION ---
     blue_dragons = blue_team.get('objectives', {}).get('dragon', {}).get('kills', 0)
     red_dragons = red_team.get('objectives', {}).get('dragon', {}).get('kills', 0)
+    
+    blue_barons = blue_team.get('objectives', {}).get('baron', {}).get('kills', 0)
+    red_barons = red_team.get('objectives', {}).get('baron', {}).get('kills', 0)
+    
+    blue_towers = blue_team.get('objectives', {}).get('tower', {}).get('kills', 0)
+    red_towers = red_team.get('objectives', {}).get('tower', {}).get('kills', 0)
     
     blue_gold = sum(p['goldEarned'] for p in info['participants'] if p['teamId'] == 100)
     red_gold = sum(p['goldEarned'] for p in info['participants'] if p['teamId'] == 200)
 
-    # --- ADVANCED LOGIC: Find Target Player and Enemy Matchup ---
+    # Find Target Player and Enemy Matchup
     target_player = next((p for p in info['participants'] if p['puuid'] == target_puuid), None)
     if not target_player:
         return False
@@ -82,7 +93,6 @@ def save_match_summary(conn, match_data, target_puuid):
     target_player_team_id = target_player['teamId']
     target_player_won = (target_player_team_id == winner)
     
-    # Find the enemy with the exact same role
     enemy_player = next((p for p in info['participants'] if p['teamPosition'] == role and p['participantId'] != target_pid), None)
     enemy_pid = enemy_player['participantId'] if enemy_player else None
 
@@ -90,11 +100,13 @@ def save_match_summary(conn, match_data, target_puuid):
     cursor.execute("""
         INSERT INTO matches 
         (match_id, game_version, game_duration_sec, winner_team_id, target_player_team_id, target_player_won, 
-         role, target_pid, enemy_pid, blue_total_gold, red_total_gold, blue_dragons, red_dragons)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+         role, target_pid, enemy_pid, blue_total_gold, red_total_gold, blue_dragons, red_dragons,
+         blue_barons, red_barons, blue_towers, red_towers)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (match_id) DO NOTHING;
     """, (match_id, game_version, duration, winner, target_player_team_id, target_player_won, 
-          role, target_pid, enemy_pid, blue_gold, red_gold, blue_dragons, red_dragons))
+          role, target_pid, enemy_pid, blue_gold, red_gold, blue_dragons, red_dragons,
+          blue_barons, red_barons, blue_towers, red_towers))
     
     cursor.close()
-    return {'target_pid': target_pid, 'enemy_pid': enemy_pid} # Return IDs to the timeline processor
+    return {'target_pid': target_pid, 'enemy_pid': enemy_pid}

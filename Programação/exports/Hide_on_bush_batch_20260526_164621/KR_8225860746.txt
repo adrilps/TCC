@@ -1,0 +1,17 @@
+**Result:** LOST | **Patch:** 16.10 | **Role:** JUNGLE | **Duration:** 31m 29s
+**Final Objectives:** Team Dragons: 0 | Enemy Dragons: 4
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +847 Gold, +318 XP
+  - Macro (Team): -272 Overall Gold
+  - Player KDA: 2/1/1
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +315 Gold, -47 XP
+  - Macro (Team): -357 Overall Gold
+  - Player KDA: 3/2/1
+
+* **Minute 32 (Final Game State):**
+  - Micro (1v1): -533 Gold, -3273 XP
+  - Macro (Team): -7575 Overall Gold
+  - Player KDA: 8/7/3

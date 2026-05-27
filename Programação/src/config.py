@@ -1,12 +1,15 @@
 import os
 
 # Riot API Key
-RIOT_API_KEY = "RGAPI-304beec9-b870-427a-a0d3-af7d3e2967b4"
+RIOt#A#PI#_KEY = "RGA##PI-c12880e3-3579-4ed8-a648-56efde01b3b7"
 
 # Target Player Settings
+#GAME_NAME = "Hide on bush"
 GAME_NAME = "ignacarious"
+#TAG_LINE = "KR1"
 TAG_LINE = "smo"
-ROUTE_REGION = "americas"  # Use 'americas' for BR/NA, 'europe' for EUW, 'asia' for KR/JP
+#ROUTE_REGION = "asia"  # Use 'americas' for BR/NA, 'europe' for EUW, 'asia' for KR/JP
+ROUTE_REGION = "americas"
 
 # Infrastructure Settings
 DB_URI = "postgresql://postgres:mysecretpassword@localhost:5432/lol_analytics"

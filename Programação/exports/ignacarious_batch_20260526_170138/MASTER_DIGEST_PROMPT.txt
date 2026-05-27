@@ -1,0 +1,474 @@
+# League of Legends Match History Analysis
+**Target Player:** ignacarious#smo
+**Total Matches Provided:** 20
+
+---
+
+### System Instructions for the AI:
+1. Analyze the timeline data across all provided matches.
+2. Identify patterns that correlate with the Target Player winning or losing.
+3. Look for 'turning points' (e.g., massive swings in gold differential or objective control).
+4. Format your output as a data analyst report, highlighting key win-conditions and fail-states.
+
+---
+
+## GAME 1
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 27m 59s
+**Final Objectives:**
+  - Team: 3 Towers, 1 Dragons, 0 Barons
+  - Enemy: 11 Towers, 2 Dragons, 1 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -1392 Gold, -906 XP
+  - Macro (Team): -243 Overall Gold
+  - Player KDA: 1/3/3
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -2517 Gold, -1470 XP
+  - Macro (Team): +726 Overall Gold
+  - Player KDA: 1/6/5
+
+* **Minute 28 (Final Game State):**
+  - Micro (1v1): -7482 Gold, -4940 XP
+  - Macro (Team): -9150 Overall Gold
+  - Player KDA: 2/12/10
+
+---
+
+## GAME 2
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 39m 41s
+**Final Objectives:**
+  - Team: 11 Towers, 4 Dragons, 2 Barons
+  - Enemy: 7 Towers, 2 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +22 Gold, -257 XP
+  - Macro (Team): -1379 Overall Gold
+  - Player KDA: 3/1/1
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -438 Gold, -210 XP
+  - Macro (Team): -1731 Overall Gold
+  - Player KDA: 3/1/2
+
+* **Minute 40 (Final Game State):**
+  - Micro (1v1): +892 Gold, +2847 XP
+  - Macro (Team): +9113 Overall Gold
+  - Player KDA: 11/2/12
+
+---
+
+## GAME 3
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 23m 0s
+**Final Objectives:**
+  - Team: 0 Towers, 0 Dragons, 0 Barons
+  - Enemy: 5 Towers, 3 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +661 Gold, +370 XP
+  - Macro (Team): +824 Overall Gold
+  - Player KDA: 2/0/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +35 Gold, +528 XP
+  - Macro (Team): -671 Overall Gold
+  - Player KDA: 2/0/0
+
+* **Minute 23 (Final Game State):**
+  - Micro (1v1): -2549 Gold, +527 XP
+  - Macro (Team): -10449 Overall Gold
+  - Player KDA: 2/2/0
+
+---
+
+## GAME 4
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 39m 42s
+**Final Objectives:**
+  - Team: 4 Towers, 2 Dragons, 0 Barons
+  - Enemy: 11 Towers, 3 Dragons, 2 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +740 Gold, +291 XP
+  - Macro (Team): +483 Overall Gold
+  - Player KDA: 1/0/1
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +1149 Gold, +56 XP
+  - Macro (Team): +909 Overall Gold
+  - Player KDA: 2/0/2
+
+* **Minute 40 (Final Game State):**
+  - Micro (1v1): +4891 Gold, -35 XP
+  - Macro (Team): -8525 Overall Gold
+  - Player KDA: 11/4/7
+
+---
+
+## GAME 5
+**Result:** LOST | **Patch:** 16.10 | **Role:** UTILITY | **Duration:** 33m 45s
+**Final Objectives:**
+  - Team: 1 Towers, 0 Dragons, 0 Barons
+  - Enemy: 11 Towers, 4 Dragons, 1 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -493 Gold, -197 XP
+  - Macro (Team): -489 Overall Gold
+  - Player KDA: 0/1/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -888 Gold, -909 XP
+  - Macro (Team): -3767 Overall Gold
+  - Player KDA: 0/3/0
+
+* **Minute 34 (Final Game State):**
+  - Micro (1v1): -1086 Gold, +208 XP
+  - Macro (Team): -13067 Overall Gold
+  - Player KDA: 1/6/6
+
+---
+
+## GAME 6
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 29m 46s
+**Final Objectives:**
+  - Team: 2 Towers, 3 Dragons, 1 Barons
+  - Enemy: 7 Towers, 2 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -921 Gold, -935 XP
+  - Macro (Team): -4331 Overall Gold
+  - Player KDA: 0/0/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -1018 Gold, -820 XP
+  - Macro (Team): -5379 Overall Gold
+  - Player KDA: 0/1/3
+
+* **Minute 30 (Final Game State):**
+  - Micro (1v1): +2305 Gold, +3896 XP
+  - Macro (Team): +962 Overall Gold
+  - Player KDA: 5/2/16
+
+---
+
+## GAME 7
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 33m 45s
+**Final Objectives:**
+  - Team: 7 Towers, 1 Dragons, 1 Barons
+  - Enemy: 7 Towers, 4 Dragons, 1 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -256 Gold, -812 XP
+  - Macro (Team): -2170 Overall Gold
+  - Player KDA: 1/0/1
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +214 Gold, -722 XP
+  - Macro (Team): -2136 Overall Gold
+  - Player KDA: 3/1/2
+
+* **Minute 34 (Final Game State):**
+  - Micro (1v1): +3860 Gold, +5195 XP
+  - Macro (Team): +4661 Overall Gold
+  - Player KDA: 7/1/11
+
+---
+
+## GAME 8
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 30m 30s
+**Final Objectives:**
+  - Team: 4 Towers, 1 Dragons, 0 Barons
+  - Enemy: 10 Towers, 4 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -217 Gold, -64 XP
+  - Macro (Team): -1453 Overall Gold
+  - Player KDA: 0/0/1
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -1748 Gold, -910 XP
+  - Macro (Team): -3930 Overall Gold
+  - Player KDA: 0/3/2
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -3936 Gold, -1994 XP
+  - Macro (Team): -9975 Overall Gold
+  - Player KDA: 4/6/7
+
+---
+
+## GAME 9
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 15m 23s
+**Final Objectives:**
+  - Team: 2 Towers, 1 Dragons, 0 Barons
+  - Enemy: 0 Towers, 1 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -38 Gold, -1 XP
+  - Macro (Team): +3027 Overall Gold
+  - Player KDA: 1/0/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +1051 Gold, +775 XP
+  - Macro (Team): +6726 Overall Gold
+  - Player KDA: 3/0/3
+
+* **Minute 16 (Final Game State):**
+  - Micro (1v1): +1089 Gold, +703 XP
+  - Macro (Team): +6125 Overall Gold
+  - Player KDA: 3/0/3
+
+---
+
+## GAME 10
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 46m 36s
+**Final Objectives:**
+  - Team: 10 Towers, 6 Dragons, 0 Barons
+  - Enemy: 7 Towers, 1 Dragons, 2 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -358 Gold, -818 XP
+  - Macro (Team): +581 Overall Gold
+  - Player KDA: 0/0/2
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -474 Gold, -487 XP
+  - Macro (Team): -177 Overall Gold
+  - Player KDA: 0/1/3
+
+* **Minute 47 (Final Game State):**
+  - Micro (1v1): -661 Gold, +5422 XP
+  - Macro (Team): +3931 Overall Gold
+  - Player KDA: 7/3/12
+
+---
+
+## GAME 11
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 36m 55s
+**Final Objectives:**
+  - Team: 10 Towers, 2 Dragons, 1 Barons
+  - Enemy: 7 Towers, 3 Dragons, 1 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -1055 Gold, -207 XP
+  - Macro (Team): -2882 Overall Gold
+  - Player KDA: 1/2/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -1167 Gold, -229 XP
+  - Macro (Team): -1189 Overall Gold
+  - Player KDA: 1/2/0
+
+* **Minute 37 (Final Game State):**
+  - Micro (1v1): -3565 Gold, +623 XP
+  - Macro (Team): +6028 Overall Gold
+  - Player KDA: 5/6/10
+
+---
+
+## GAME 12
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 23m 26s
+**Final Objectives:**
+  - Team: 6 Towers, 3 Dragons, 0 Barons
+  - Enemy: 1 Towers, 0 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -625 Gold, -199 XP
+  - Macro (Team): +2647 Overall Gold
+  - Player KDA: 0/0/2
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -667 Gold, +316 XP
+  - Macro (Team): +6539 Overall Gold
+  - Player KDA: 0/1/5
+
+* **Minute 24 (Final Game State):**
+  - Micro (1v1): -70 Gold, +1195 XP
+  - Macro (Team): +12158 Overall Gold
+  - Player KDA: 0/3/16
+
+---
+
+## GAME 13
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 28m 47s
+**Final Objectives:**
+  - Team: 9 Towers, 2 Dragons, 1 Barons
+  - Enemy: 6 Towers, 2 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -828 Gold, -658 XP
+  - Macro (Team): -1563 Overall Gold
+  - Player KDA: 0/1/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -686 Gold, -870 XP
+  - Macro (Team): -2129 Overall Gold
+  - Player KDA: 2/1/3
+
+* **Minute 29 (Final Game State):**
+  - Micro (1v1): +3909 Gold, +4586 XP
+  - Macro (Team): +8611 Overall Gold
+  - Player KDA: 8/4/11
+
+---
+
+## GAME 14
+**Result:** WON | **Patch:** 16.10 | **Role:** UTILITY | **Duration:** 34m 53s
+**Final Objectives:**
+  - Team: 9 Towers, 4 Dragons, 0 Barons
+  - Enemy: 4 Towers, 1 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +663 Gold, +215 XP
+  - Macro (Team): +2365 Overall Gold
+  - Player KDA: 1/1/2
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +1181 Gold, +578 XP
+  - Macro (Team): +3686 Overall Gold
+  - Player KDA: 2/2/3
+
+* **Minute 35 (Final Game State):**
+  - Micro (1v1): -367 Gold, +48 XP
+  - Macro (Team): +4223 Overall Gold
+  - Player KDA: 2/7/21
+
+---
+
+## GAME 15
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 39m 56s
+**Final Objectives:**
+  - Team: 4 Towers, 1 Dragons, 0 Barons
+  - Enemy: 11 Towers, 4 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -481 Gold, -261 XP
+  - Macro (Team): +233 Overall Gold
+  - Player KDA: 0/1/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -1831 Gold, -671 XP
+  - Macro (Team): -39 Overall Gold
+  - Player KDA: 0/2/1
+
+* **Minute 40 (Final Game State):**
+  - Micro (1v1): -8975 Gold, -6219 XP
+  - Macro (Team): -6414 Overall Gold
+  - Player KDA: 3/11/11
+
+---
+
+## GAME 16
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 26m 30s
+**Final Objectives:**
+  - Team: 2 Towers, 0 Dragons, 0 Barons
+  - Enemy: 11 Towers, 4 Dragons, 1 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -114 Gold, -462 XP
+  - Macro (Team): +1096 Overall Gold
+  - Player KDA: 1/0/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +6 Gold, -349 XP
+  - Macro (Team): +1776 Overall Gold
+  - Player KDA: 1/0/1
+
+* **Minute 27 (Final Game State):**
+  - Micro (1v1): -3393 Gold, -3278 XP
+  - Macro (Team): -11895 Overall Gold
+  - Player KDA: 1/2/5
+
+---
+
+## GAME 17
+**Result:** LOST | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 39m 4s
+**Final Objectives:**
+  - Team: 1 Towers, 2 Dragons, 0 Barons
+  - Enemy: 15 Towers, 4 Dragons, 3 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +421 Gold, +667 XP
+  - Macro (Team): -3460 Overall Gold
+  - Player KDA: 1/0/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -795 Gold, -42 XP
+  - Macro (Team): -7363 Overall Gold
+  - Player KDA: 1/1/0
+
+* **Minute 40 (Final Game State):**
+  - Micro (1v1): +2917 Gold, +2753 XP
+  - Macro (Team): -10110 Overall Gold
+  - Player KDA: 13/6/4
+
+---
+
+## GAME 18
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 34m 44s
+**Final Objectives:**
+  - Team: 7 Towers, 3 Dragons, 0 Barons
+  - Enemy: 7 Towers, 2 Dragons, 1 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -559 Gold, -715 XP
+  - Macro (Team): +678 Overall Gold
+  - Player KDA: 0/0/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -958 Gold, -649 XP
+  - Macro (Team): -125 Overall Gold
+  - Player KDA: 1/1/3
+
+* **Minute 35 (Final Game State):**
+  - Micro (1v1): -520 Gold, +383 XP
+  - Macro (Team): +3660 Overall Gold
+  - Player KDA: 12/5/10
+
+---
+
+## GAME 19
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 27m 59s
+**Final Objectives:**
+  - Team: 11 Towers, 3 Dragons, 1 Barons
+  - Enemy: 1 Towers, 1 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +590 Gold, +628 XP
+  - Macro (Team): +3975 Overall Gold
+  - Player KDA: 3/0/2
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +1700 Gold, +1102 XP
+  - Macro (Team): +6905 Overall Gold
+  - Player KDA: 5/1/4
+
+* **Minute 28 (Final Game State):**
+  - Micro (1v1): +1055 Gold, +1036 XP
+  - Macro (Team): +11509 Overall Gold
+  - Player KDA: 12/1/10
+
+---
+
+## GAME 20
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 30m 47s
+**Final Objectives:**
+  - Team: 9 Towers, 3 Dragons, 1 Barons
+  - Enemy: 5 Towers, 1 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +97 Gold, +427 XP
+  - Macro (Team): +983 Overall Gold
+  - Player KDA: 1/0/3
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -783 Gold, -49 XP
+  - Macro (Team): -1336 Overall Gold
+  - Player KDA: 2/2/5
+
+* **Minute 31 (Final Game State):**
+  - Micro (1v1): -2697 Gold, +416 XP
+  - Macro (Team): +7979 Overall Gold
+  - Player KDA: 5/4/13
+
+---
+

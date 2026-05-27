@@ -1,0 +1,19 @@
+**Result:** WON | **Patch:** 16.10 | **Role:** JUNGLE | **Duration:** 19m 35s
+**Final Objectives:**
+  - Team: 4 Towers, 1 Dragons, 0 Barons
+  - Enemy: 1 Towers, 0 Dragons, 0 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +321 Gold, +434 XP
+  - Macro (Team): -355 Overall Gold
+  - Player KDA: 3/0/1
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +1404 Gold, +1665 XP
+  - Macro (Team): +1712 Overall Gold
+  - Player KDA: 5/0/3
+
+* **Minute 20 (Final Game State):**
+  - Micro (1v1): +3579 Gold, +4267 XP
+  - Macro (Team): +8051 Overall Gold
+  - Player KDA: 8/0/5

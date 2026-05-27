@@ -1,0 +1,17 @@
+**Result:** WON | **Patch:** 16.10 | **Role:** BOTTOM | **Duration:** 15m 23s
+**Final Objectives:** Team Dragons: 1 | Enemy Dragons: 1
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -38 Gold, -1 XP
+  - Macro (Team): +3027 Overall Gold
+  - Player KDA: 1/0/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +1051 Gold, +775 XP
+  - Macro (Team): +6726 Overall Gold
+  - Player KDA: 3/0/3
+
+* **Minute 16 (Final Game State):**
+  - Micro (1v1): +1089 Gold, +703 XP
+  - Macro (Team): +6125 Overall Gold
+  - Player KDA: 3/0/3

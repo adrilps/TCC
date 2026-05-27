@@ -1,0 +1,17 @@
+**Result:** WON | **Patch:** 16.10 | **Role:** JUNGLE | **Duration:** 25m 32s
+**Final Objectives:** Team Dragons: 2 | Enemy Dragons: 0
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): +684 Gold, +384 XP
+  - Macro (Team): +554 Overall Gold
+  - Player KDA: 0/1/5
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): +1080 Gold, +849 XP
+  - Macro (Team): +975 Overall Gold
+  - Player KDA: 4/1/10
+
+* **Minute 26 (Final Game State):**
+  - Micro (1v1): +3752 Gold, +3383 XP
+  - Macro (Team): +8523 Overall Gold
+  - Player KDA: 7/3/23

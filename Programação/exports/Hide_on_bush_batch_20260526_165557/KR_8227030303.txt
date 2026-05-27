@@ -1,0 +1,19 @@
+**Result:** LOST | **Patch:** 16.10 | **Role:** MIDDLE | **Duration:** 41m 19s
+**Final Objectives:**
+  - Team: 10 Towers, 2 Dragons, 2 Barons
+  - Enemy: 9 Towers, 4 Dragons, 1 Barons
+
+* **Minute 10 (Early Game):**
+  - Micro (1v1): -5 Gold, +996 XP
+  - Macro (Team): +2901 Overall Gold
+  - Player KDA: 1/1/0
+
+* **Minute 15 (Mid Game Transition):**
+  - Micro (1v1): -911 Gold, +916 XP
+  - Macro (Team): +1233 Overall Gold
+  - Player KDA: 1/2/0
+
+* **Minute 42 (Final Game State):**
+  - Micro (1v1): +2327 Gold, +5544 XP
+  - Macro (Team): +320 Overall Gold
+  - Player KDA: 11/4/9
