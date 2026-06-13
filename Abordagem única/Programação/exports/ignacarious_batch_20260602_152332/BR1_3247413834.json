@@ -1,0 +1,564 @@
+{
+  "match_id": "BR1_3247413834",
+  "patch": "16.11",
+  "duration_seconds": 2208,
+  "role": "BOTTOM",
+  "result": "WIN",
+  "player_side": "red",
+  "objectives": {
+    "team": {
+      "towers": 10,
+      "dragons": 3,
+      "barons": 1
+    },
+    "enemy": {
+      "towers": 6,
+      "dragons": 2,
+      "barons": 0
+    }
+  },
+  "snapshots": [
+    {
+      "minute": 10,
+      "phase": "early_game",
+      "micro": {
+        "gold_diff": -426,
+        "xp_diff": 499,
+        "cs_diff": 1,
+        "level_diff": 1,
+        "dmg_diff": -523,
+        "player_current_gold": 236,
+        "player_position": {
+          "x": 13572,
+          "y": 7741
+        }
+      },
+      "macro": {
+        "team_gold_diff": 1791
+      },
+      "kda": "2/1/0"
+    },
+    {
+      "minute": 15,
+      "phase": "mid_game_transition",
+      "micro": {
+        "gold_diff": -711,
+        "xp_diff": 702,
+        "cs_diff": 3,
+        "level_diff": 1,
+        "dmg_diff": -1122,
+        "player_current_gold": 265,
+        "player_position": {
+          "x": 13541,
+          "y": 3174
+        }
+      },
+      "macro": {
+        "team_gold_diff": 1745
+      },
+      "kda": "6/2/3"
+    },
+    {
+      "minute": 37,
+      "phase": "final_state",
+      "micro": {
+        "gold_diff": 2087,
+        "xp_diff": 3749,
+        "cs_diff": 51,
+        "level_diff": 2,
+        "dmg_diff": -71,
+        "player_current_gold": 1395,
+        "player_position": {
+          "x": 10952,
+          "y": 3523
+        }
+      },
+      "macro": {
+        "team_gold_diff": 8189
+      },
+      "kda": "14/4/13"
+    }
+  ],
+  "events": [
+    {
+      "minute": 0,
+      "type": "ITEM_PURCHASED",
+      "value": "1055",
+      "participant": "player"
+    },
+    {
+      "minute": 0,
+      "type": "ITEM_PURCHASED",
+      "value": "2003",
+      "participant": "player"
+    },
+    {
+      "minute": 1,
+      "type": "LEVEL_UP",
+      "value": "2",
+      "participant": "enemy"
+    },
+    {
+      "minute": 1,
+      "type": "LEVEL_UP",
+      "value": "2",
+      "participant": "player"
+    },
+    {
+      "minute": 2,
+      "type": "LEVEL_UP",
+      "value": "3",
+      "participant": "enemy"
+    },
+    {
+      "minute": 2,
+      "type": "LEVEL_UP",
+      "value": "3",
+      "participant": "player"
+    },
+    {
+      "minute": 3,
+      "type": "ITEM_PURCHASED",
+      "value": "3057",
+      "participant": "player"
+    },
+    {
+      "minute": 4,
+      "type": "LEVEL_UP",
+      "value": "4",
+      "participant": "enemy"
+    },
+    {
+      "minute": 4,
+      "type": "LEVEL_UP",
+      "value": "4",
+      "participant": "player"
+    },
+    {
+      "minute": 5,
+      "type": "ITEM_PURCHASED",
+      "value": "1036",
+      "participant": "player"
+    },
+    {
+      "minute": 5,
+      "type": "LEVEL_UP",
+      "value": "5",
+      "participant": "player"
+    },
+    {
+      "minute": 6,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "DRAGON",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 6,
+      "type": "LEVEL_UP",
+      "value": "5",
+      "participant": "enemy"
+    },
+    {
+      "minute": 7,
+      "type": "ITEM_PURCHASED",
+      "value": "1018",
+      "participant": "player"
+    },
+    {
+      "minute": 7,
+      "type": "LEVEL_UP",
+      "value": "6",
+      "participant": "enemy"
+    },
+    {
+      "minute": 7,
+      "type": "LEVEL_UP",
+      "value": "6",
+      "participant": "player"
+    },
+    {
+      "minute": 8,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "HORDE",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 8,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "HORDE",
+      "participant": "team"
+    },
+    {
+      "minute": 9,
+      "type": "ITEM_PURCHASED",
+      "value": "3133",
+      "participant": "player"
+    },
+    {
+      "minute": 9,
+      "type": "LEVEL_UP",
+      "value": "7",
+      "participant": "player"
+    },
+    {
+      "minute": 10,
+      "type": "LEVEL_UP",
+      "value": "7",
+      "participant": "enemy"
+    },
+    {
+      "minute": 11,
+      "type": "ITEM_PURCHASED",
+      "value": "3158",
+      "participant": "player"
+    },
+    {
+      "minute": 11,
+      "type": "ITEM_PURCHASED",
+      "value": "3508",
+      "participant": "player"
+    },
+    {
+      "minute": 11,
+      "type": "LEVEL_UP",
+      "value": "8",
+      "participant": "player"
+    },
+    {
+      "minute": 12,
+      "type": "LEVEL_UP",
+      "value": "8",
+      "participant": "enemy"
+    },
+    {
+      "minute": 13,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 13,
+      "type": "ITEM_PURCHASED",
+      "value": "2022",
+      "participant": "player"
+    },
+    {
+      "minute": 13,
+      "type": "ITEM_PURCHASED",
+      "value": "3044",
+      "participant": "player"
+    },
+    {
+      "minute": 14,
+      "type": "ITEM_PURCHASED",
+      "value": "3067",
+      "participant": "player"
+    },
+    {
+      "minute": 14,
+      "type": "LEVEL_UP",
+      "value": "9",
+      "participant": "player"
+    },
+    {
+      "minute": 15,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "DRAGON",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 15,
+      "type": "LEVEL_UP",
+      "value": "9",
+      "participant": "enemy"
+    },
+    {
+      "minute": 16,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "team"
+    },
+    {
+      "minute": 16,
+      "type": "LEVEL_UP",
+      "value": "10",
+      "participant": "player"
+    },
+    {
+      "minute": 17,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "RIFTHERALD",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 17,
+      "type": "LEVEL_UP",
+      "value": "10",
+      "participant": "enemy"
+    },
+    {
+      "minute": 18,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "team"
+    },
+    {
+      "minute": 18,
+      "type": "ITEM_PURCHASED",
+      "value": "3071",
+      "participant": "player"
+    },
+    {
+      "minute": 18,
+      "type": "ITEM_PURCHASED",
+      "value": "3133",
+      "participant": "player"
+    },
+    {
+      "minute": 18,
+      "type": "LEVEL_UP",
+      "value": "11",
+      "participant": "enemy"
+    },
+    {
+      "minute": 18,
+      "type": "LEVEL_UP",
+      "value": "11",
+      "participant": "player"
+    },
+    {
+      "minute": 19,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "team"
+    },
+    {
+      "minute": 20,
+      "type": "LEVEL_UP",
+      "value": "12",
+      "participant": "player"
+    },
+    {
+      "minute": 21,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 21,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "DRAGON",
+      "participant": "team"
+    },
+    {
+      "minute": 21,
+      "type": "ITEM_PURCHASED",
+      "value": "1036",
+      "participant": "player"
+    },
+    {
+      "minute": 21,
+      "type": "ITEM_PURCHASED",
+      "value": "1037",
+      "participant": "player"
+    },
+    {
+      "minute": 22,
+      "type": "LEVEL_UP",
+      "value": "12",
+      "participant": "enemy"
+    },
+    {
+      "minute": 22,
+      "type": "LEVEL_UP",
+      "value": "13",
+      "participant": "player"
+    },
+    {
+      "minute": 23,
+      "type": "LEVEL_UP",
+      "value": "13",
+      "participant": "enemy"
+    },
+    {
+      "minute": 24,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 24,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "team"
+    },
+    {
+      "minute": 25,
+      "type": "ITEM_PURCHASED",
+      "value": "1038",
+      "participant": "player"
+    },
+    {
+      "minute": 25,
+      "type": "ITEM_PURCHASED",
+      "value": "2517",
+      "participant": "player"
+    },
+    {
+      "minute": 25,
+      "type": "LEVEL_UP",
+      "value": "14",
+      "participant": "player"
+    },
+    {
+      "minute": 26,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 26,
+      "type": "LEVEL_UP",
+      "value": "14",
+      "participant": "enemy"
+    },
+    {
+      "minute": 27,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "DRAGON",
+      "participant": "team"
+    },
+    {
+      "minute": 27,
+      "type": "ITEM_PURCHASED",
+      "value": "3111",
+      "participant": "player"
+    },
+    {
+      "minute": 28,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "team"
+    },
+    {
+      "minute": 28,
+      "type": "LEVEL_UP",
+      "value": "15",
+      "participant": "player"
+    },
+    {
+      "minute": 29,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 29,
+      "type": "LEVEL_UP",
+      "value": "15",
+      "participant": "enemy"
+    },
+    {
+      "minute": 30,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 30,
+      "type": "ITEM_PURCHASED",
+      "value": "1042",
+      "participant": "player"
+    },
+    {
+      "minute": 30,
+      "type": "ITEM_PURCHASED",
+      "value": "3031",
+      "participant": "player"
+    },
+    {
+      "minute": 30,
+      "type": "LEVEL_UP",
+      "value": "16",
+      "participant": "player"
+    },
+    {
+      "minute": 32,
+      "type": "BUILDING_KILL",
+      "value": "INHIBITOR_BUILDING",
+      "participant": "team"
+    },
+    {
+      "minute": 32,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "team"
+    },
+    {
+      "minute": 32,
+      "type": "ITEM_PURCHASED",
+      "value": "3086",
+      "participant": "player"
+    },
+    {
+      "minute": 32,
+      "type": "LEVEL_UP",
+      "value": "16",
+      "participant": "enemy"
+    },
+    {
+      "minute": 32,
+      "type": "LEVEL_UP",
+      "value": "17",
+      "participant": "player"
+    },
+    {
+      "minute": 33,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "BARON_NASHOR",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 33,
+      "type": "ELITE_MONSTER_KILL",
+      "value": "DRAGON",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 34,
+      "type": "ITEM_PURCHASED",
+      "value": "3094",
+      "participant": "player"
+    },
+    {
+      "minute": 34,
+      "type": "LEVEL_UP",
+      "value": "18",
+      "participant": "player"
+    },
+    {
+      "minute": 35,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 36,
+      "type": "BUILDING_KILL",
+      "value": "INHIBITOR_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 36,
+      "type": "BUILDING_KILL",
+      "value": "TOWER_BUILDING",
+      "participant": "enemy_team"
+    },
+    {
+      "minute": 36,
+      "type": "ITEM_PURCHASED",
+      "value": "1038",
+      "participant": "player"
+    }
+  ]
+}

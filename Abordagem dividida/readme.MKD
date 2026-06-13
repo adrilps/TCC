@@ -1,0 +1,28 @@
+### WHAT AM I DOING?
+
+    I am going to separate a single instance of a game into pieces.
+    It is not a flawless approach but it is significantly more contextual than the alternative.
+
+### HOW IS THAT WORKING?
+
+    A game will be split into three. Early, mid, and late-game.
+    Each lane has their own je ne sais quoi, but that is for a later stage of things. 
+    Now I'll focus on mid lane as it is the "simplest" one.
+
+### WHAT WILL THAT MEAN?
+
+    I will still retrieve data through MATCH-V5, but that data will be stripped.
+    Each game replay data will be turned into 3 files, one for each stage of the game.
+
+## **STAGE ONE - EARLY-GAME** 
+
+    Early game, as per my general game knowledge, composes the point where taking damage is the most.. damaging.
+    CS, trades and kills are super important. Deaths will carry a really high penalty, aswell as cs disadvantages.
+    An early-game winner is he who takes their turret or has a really high map impact.
+    Kills outside their lane is considered map impact.
+    Objectives outside their lane is considered map impact.
+
+# **SUTEJI NI - MItsuDO GEEMU**
+
+    Mid game is characterized mostly by skirmishes over map control and objectives.
+    

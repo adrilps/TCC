@@ -1,0 +1,56 @@
+{
+  "match_id": "BR1_3240863943",
+  "patch": "16.10",
+  "duration_seconds": 80,
+  "role": "BOTTOM",
+  "result": "WIN",
+  "player_side": "red",
+  "objectives": {
+    "team": {
+      "towers": 0,
+      "dragons": 0,
+      "barons": 0
+    },
+    "enemy": {
+      "towers": 0,
+      "dragons": 0,
+      "barons": 0
+    }
+  },
+  "snapshots": [
+    {
+      "minute": 2,
+      "phase": "final_state",
+      "micro": {
+        "gold_diff": 20,
+        "xp_diff": 120,
+        "cs_diff": 1,
+        "level_diff": 0,
+        "dmg_diff": 0,
+        "player_current_gold": 51,
+        "player_position": {
+          "x": 12431,
+          "y": 2547
+        }
+      },
+      "macro": {
+        "team_gold_diff": -394
+      },
+      "kda": "0/0/0"
+    }
+  ],
+  "events": [
+    {
+      "minute": 0,
+      "type": "ITEM_PURCHASED",
+      "value": "1056",
+      "participant": "player"
+    },
+    {
+      "minute": 0,
+      "type": "ITEM_PURCHASED",
+      "value": "2003",
+      "participant": "player"
+    }
+  ]
+}

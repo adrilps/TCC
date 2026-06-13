@@ -1,0 +1,43 @@
+{
+  "match_id": "BR1_3237276174",
+  "patch": "16.9",
+  "duration_seconds": 77,
+  "role": "BOTTOM",
+  "result": "WIN",
+  "player_side": "red",
+  "objectives": {
+    "team": {
+      "towers": 0,
+      "dragons": 0,
+      "barons": 0
+    },
+    "enemy": {
+      "towers": 0,
+      "dragons": 0,
+      "barons": 0
+    }
+  },
+  "snapshots": [
+    {
+      "minute": 2,
+      "phase": "final_state",
+      "micro": {
+        "gold_diff": 0,
+        "xp_diff": 0,
+        "cs_diff": 0,
+        "level_diff": 0,
+        "dmg_diff": 0,
+        "player_current_gold": 525,
+        "player_position": {
+          "x": 14340,
+          "y": 14390
+        }
+      },
+      "macro": {
+        "team_gold_diff": 20
+      },
+      "kda": "0/0/0"
+    }
+  ],
+  "events": []
+}
