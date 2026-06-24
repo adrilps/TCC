@@ -1,0 +1,589 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/">
+    <rdf:Description rdf:about="#item_1">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>2017-December</prism:volume>
+                <dc:title>Adv. neural inf. proces. syst.</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>Neural information processing systems foundation</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lundberg</foaf:surname>
+                        <foaf:givenName>Scott M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenName>Su-In</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2"/>
+        <dc:title>A unified approach to interpreting model predictions</dc:title>
+        <dcterms:abstract>Understanding why a model makes a certain prediction can be as crucial as the prediction's accuracy in many applications. However, the highest accuracy for large modern datasets is often achieved by complex models that even experts struggle to interpret, such as ensemble or deep learning models, creating a tension between accuracy and interpretability. In response, various methods have recently been proposed to help users interpret the predictions of complex models, but it is often unclear how these methods are related and when one method is preferable over another. To address this problem, we present a unified framework for interpreting predictions, SHAP (SHapley Additive exPlanations). SHAP assigns each feature an importance value for a particular prediction. Its novel components include: (1) the identification of a new class of additive feature importance measures, and (2) theoretical results showing there is a unique solution in this class with a set of desirable properties. The new class unifies six existing methods, notable because several recent methods in the class lack the proposed desirable properties. Based on insights from this unification, we present new methods that show improved computational performance and/or better consistency with human intuition than previous approaches. © 2017 Neural information processing systems foundation. All rights reserved.</dcterms:abstract>
+        <dc:date>2017</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Scopus</z:libraryCatalog>
+        <dc:description>Journal Abbreviation: Adv. neural inf. proces. syst.</dc:description>
+        <bib:pages>4766-4775</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>Advances in Neural Information Processing Systems</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.scopus.com/pages/publications/85044542379?origin=resultslist</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:30:34</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_3">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2522-5839"/>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Nature Research</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lundberg</foaf:surname>
+                        <foaf:givenName>Scott M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Erion</foaf:surname>
+                        <foaf:givenName>Gabriel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Hugh</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>DeGrave</foaf:surname>
+                        <foaf:givenName>Alex</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Prutkin</foaf:surname>
+                        <foaf:givenName>Jordan M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nair</foaf:surname>
+                        <foaf:givenName>Bala</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Katz</foaf:surname>
+                        <foaf:givenName>Ronit</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Himmelfarb</foaf:surname>
+                        <foaf:givenName>Jonathan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bansal</foaf:surname>
+                        <foaf:givenName>Nisha</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenName>Su-In</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_4"/>
+        <dc:title>From local explanations to global understanding with explainable AI for trees</dc:title>
+        <dcterms:abstract>Tree-based machine learning models such as random forests, decision trees and gradient boosted trees are popular nonlinear predictive models, yet comparatively little attention has been paid to explaining their predictions. Here we improve the interpretability of tree-based models through three main contributions. (1) A polynomial time algorithm to compute optimal explanations based on game theory. (2) A new type of explanation that directly measures local feature interaction effects. (3) A new set of tools for understanding global model structure based on combining many local explanations of each prediction. We apply these tools to three medical machine learning problems and show how combining many high-quality local explanations allows us to represent global structure while retaining local faithfulness to the original model. These tools enable us to (1) identify high-magnitude but low-frequency nonlinear mortality risk factors in the US population, (2) highlight distinct population subgroups with shared risk characteristics, (3) identify nonlinear interaction effects among risk factors for chronic kidney disease and (4) monitor a machine learning model deployed in a hospital by identifying which features are degrading the model’s performance over time. Given the popularity of tree-based machine learning models, these improvements to their interpretability have implications across a broad set of domains. © 2020, The Author(s), under exclusive licence to Springer Nature Limited.</dcterms:abstract>
+        <dc:date>2020</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Scopus</z:libraryCatalog>
+        <bib:pages>56-67</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2522-5839">
+        <dc:identifier>DOI 10.1038/s42256-019-0138-9</dc:identifier>
+        <prism:volume>2</prism:volume>
+        <dc:title>Nature Machine Intelligence</dc:title>
+        <dc:identifier>ISSN 2522-5839</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Nat. Mach. Intell.</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_4">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.scopus.com/pages/publications/85133604939?origin=resultslist</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:37:30</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-1-4008-8197-0">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <dc:identifier>ISBN 978-1-4008-8197-0</dc:identifier>
+                <dc:title>Contributions to the Theory of Games, Volume II</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Princeton University Press</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shapley</foaf:surname>
+                        <foaf:givenName>L. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>17. A Value for n-Person Games</dc:title>
+        <dcterms:abstract>17. A Value for n-Person Games was published in Contributions to the Theory of Games, Volume II on page 307.</dcterms:abstract>
+        <dc:date>2016/06/06</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.degruyterbrill.com/document/doi/10.1515/9781400881970-018/html?lang=en</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:51:16</dcterms:dateSubmitted>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.degruyterbrill.com</z:libraryCatalog>
+        <dc:rights>De Gruyter expressly reserves the right to use all content for commercial text and data mining within the meaning of Section 44b of the German Copyright Act.</dc:rights>
+        <dc:description>Section: Contributions to the Theory of Games, Volume II</dc:description>
+        <bib:pages>307-318</bib:pages>
+    </bib:BookSection>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-4232-2">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1145/2939672.2939785</dc:identifier>
+                <prism:volume>13-17-August-2016</prism:volume>
+                <dc:identifier>ISBN 978-1-4503-4232-2</dc:identifier>
+                <dc:title>Proc. ACM SIGKDD Int. Conf. Knowl. Discov. Data Min.</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>Association for Computing Machinery</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Tianqi</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guestrin</foaf:surname>
+                        <foaf:givenName>Carlos</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_8"/>
+        <link:link rdf:resource="#item_7"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Large-scale Machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>XGBoost: A scalable tree boosting system</dc:title>
+        <dcterms:abstract>Tree boosting is a highly effective and widely used machine learning method. In this paper, we describe a scalable endto-end tree boosting system called XGBoost, which is used widely by data scientists to achieve state-of-the-art results on many machine learning challenges. We propose a novel sparsity-aware algorithm for sparse data and weighted quantile sketch for approximate tree learning. More importantly, we provide insights on cache access patterns, data compression and sharding to build a scalable tree boosting system. By combining these insights, XGBoost scales beyond billions of examples using far fewer resources than existing systems. © 2016 ACM.</dcterms:abstract>
+        <dc:date>2016</dc:date>
+        <z:shortTitle>XGBoost</z:shortTitle>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Scopus</z:libraryCatalog>
+        <dc:description>Journal Abbreviation: Proc. ACM SIGKDD Int. Conf. Knowl. Discov. Data Min.</dc:description>
+        <bib:pages>785-794</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.scopus.com/pages/publications/84984950690?origin=resultslist</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:53:19</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_7">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Versão submetida</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1603.02754</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:53:16</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_9">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1559-0410"/>
+        <dc:publisher>
+            <foaf:Organization>
+               <foaf:name>De Gruyter Open Ltd</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Maymin</foaf:surname>
+                        <foaf:givenName>Philip Z.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_10"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>analytics</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>eSports</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>League of Legends</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Smart kills and worthless deaths: ESports analytics for League of Legends</dc:title>
+        <dcterms:abstract>Vast data on eSports should be easily accessible but often is not. League of Legends (LoL) only has rudimentary statistics such as levels, items, gold, and deaths. We present a new way to capture more useful data. We track every champion's location multiple times every second. We track every ability cast and attack made, all damages caused and avoided, vision, health, mana, and cooldowns. We track continuously, invisibly, remotely, and live. Using a combination of computer vision, dynamic client hooks, machine learning, visualization, logistic regression, large-scale cloud computing, and fast and frugal trees, we generate this new high-frequency data on millions of ranked LoL games, calibrate an in-game win probability model, develop enhanced definitions for standard metrics, introduce dozens more advanced metrics, automate player improvement analysis, and apply a new player-evaluation framework on the basic and advanced stats. How much does an individual contribute to a team's performance? We find that individual actions conditioned on changes to estimated win probability correlate almost perfectly to team performance: regular kills and deaths do not nearly explain as much as smart kills and worthless deaths. Our approach offers applications for other eSports and traditional sports. All the code is open-sourced.  © 2020 Philip Z. Maymin, published by De Gruyter, Berlin/Boston 2020.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:shortTitle>Smart kills and worthless deaths</z:shortTitle>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Scopus</z:libraryCatalog>
+        <bib:pages>11-27</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1559-0410">
+        <dc:identifier>DOI 10.1515/jqas-2019-0096</dc:identifier>
+        <prism:volume>17</prism:volume>
+        <dc:title>Journal of Quantitative Analysis in Sports</dc:title>
+        <dc:identifier>ISSN 1559-0410</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>J. Quant. Anal. Sports</dcterms:alternative>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_10">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.scopus.com/pages/publications/85099635469?origin=resultslist</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:55:52</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2309.02449">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.21528/CBIC2023-161</dc:identifier>
+                <dc:title>Anais do XVI Congresso Brasileiro de Inteligência Computacional</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Junior</foaf:surname>
+                        <foaf:givenName>Jailson B. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Campelo</foaf:surname>
+                        <foaf:givenName>Claudio E. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_12"/>
+        <link:link rdf:resource="#item_14"/>
+        <link:link rdf:resource="#item_13"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>League of Legends: Real-Time Result Prediction</dc:title>
+        <dcterms:abstract>This paper presents a study on the prediction of outcomes in matches of the electronic game League of Legends (LoL) using machine learning techniques. With the aim of exploring the ability to predict real-time results, considering different variables and stages of the match, we highlight the use of unpublished data as a fundamental part of this process. With the increasing popularity of LoL and the emergence of tournaments, betting related to the game has also emerged, making the investigation in this area even more relevant. A variety of models were evaluated and the results were encouraging. A model based on LightGBM showed the best performance, achieving an average accuracy of 81.62\% in intermediate stages of the match when the percentage of elapsed time was between 60\% and 80\%. On the other hand, the Logistic Regression and Gradient Boosting models proved to be more effective in early stages of the game, with promising results. This study contributes to the field of machine learning applied to electronic games, providing valuable insights into real-time prediction in League of Legends. The results obtained may be relevant for both players seeking to improve their strategies and the betting industry related to the game.</dcterms:abstract>
+        <dc:date>2023-12-31</dc:date>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2309.02449</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:57:48</dcterms:dateSubmitted>
+        <z:shortTitle>League of Legends</z:shortTitle>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:2309.02449 [cs.LG]</dc:description>
+        <bib:pages>1-8</bib:pages>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_12">
+       <rdf:value>Comment: 8 pages</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Preprint PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/pdf/2309.02449v1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:57:49</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_13">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2309.02449</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-20 20:57:48</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:979-8-3315-7635-6">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>DOI 10.1109/ECTIDAMTNCON67592.2026.11460094</dc:identifier>
+                <dc:identifier>ISBN 979-8-3315-7635-6</dc:identifier>
+                <dc:title>Int. Conf. Digit. Arts, Media Technol. ECTI North. Sect. Conf. Electr., Electron., Comput. Telecommun. Eng., ECTI DAMT NCON</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <foaf:name>Institute of Electrical and Electronics Engineers Inc.</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Aonon</foaf:surname>
+                        <foaf:givenName>Manaschai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Samrankhong</foaf:surname>
+                        <foaf:givenName>Ponguthai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kamnardsiri</foaf:surname>
+                        <foaf:givenName>Teerawat</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>League of Legends</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>draft prediction</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>esports analytics</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>feature selection</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>gradient boosting</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>MOBA games</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Strategic Feature Selection for Draft Prediction in League of Legends</dc:title>
+        <dcterms:abstract>Draft phase decisions significantly influence match outcomes in MOBA games, yet optimal champion selection requires extensive strategic knowledge. We present a machine learning framework as a data-driven innovation strategy for League of Legends draft prediction through systematic feature engineering and algorithm evaluation. Using 86,556 high-level matches, we engineered 156 strategic features across eight categories: Meta, Synergy, Matchup, Bans, Picks, Runes, Strategic, Spells. Through evaluation of 20 algorithms, we identify LightGBM as optimal, achieving 83.1% test accuracy with 92.2% ROC-AUC and minimal generalization gap (0.27%). Feature importance analysis reveals that meta strength (26.3%), team synergy (24.8%), and counter-matchups (20.6%) dominate draft success, while rune and spell selections contribute minimally (6.7% combined). This work establishes empirical benchmarks for draft prediction and provides reproducible methodology for competitive gaming analytics, supporting economic growth and development in the digital sports sector. © 2026 IEEE.</dcterms:abstract>
+        <dc:date>2026</dc:date>
+        <z:language>English</z:language>
+        <z:libraryCatalog>Scopus</z:libraryCatalog>
+        <dc:description>Journal Abbreviation: Int. Conf. Digit. Arts, Media Technol. ECTI North. Sect. Conf. Electr., Electron., Comput. Telecommun. Eng., ECTI DAMT NCON</dc:description>
+        <bib:pages>48-53</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>11th International Conference on Digital Arts, Media and Technology and 9th ECTI Northern Section Conference on Electrical, Electronics, Computer and Telecommunications Engineering, ECTI DAMT and NCON 2026</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1702.06253">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Zhengxing</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sun</foaf:surname>
+                        <foaf:givenName>Yizhou</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>El-nasr</foaf:surname>
+                        <foaf:givenName>Magy Seif</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nguyen</foaf:surname>
+                        <foaf:givenName>Truong-Huy D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_17"/>
+        <link:link rdf:resource="#item_19"/>
+        <link:link rdf:resource="#item_18"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Artificial Intelligence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Human-Computer Interaction</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Multiagent Systems</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>Computer Science - Social and Information Networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Player Skill Decomposition in Multiplayer Online Battle Arenas</dc:title>
+        <dcterms:abstract>Successful analysis of player skills in video games has important impacts on the process of enhancing player experience without undermining their continuous skill development. Moreover, player skill analysis becomes more intriguing in team-based video games because such form of study can help discover useful factors in effective team formation. In this paper, we consider the problem of skill decomposition in MOBA (MultiPlayer Online Battle Arena) games, with the goal to understand what player skill factors are essential for the outcome of a game match. To understand the construct of MOBA player skills, we utilize various skill-based predictive models to decompose player skills into interpretative parts, the impact of which are assessed in statistical terms. We apply this analysis approach on two widely known MOBAs, namely League of Legends (LoL) and Defense of the Ancients 2 (DOTA2). The finding is that base skills of in-game avatars, base skills of players, and players' champion-specific skills are three prominent skill components influencing LoL's match outcomes, while those of DOTA2 are mainly impacted by in-game avatars' base skills but not much by the other two.</dcterms:abstract>
+        <dc:date>2017-02-21</dc:date>
+        <dc:identifier>DOI 10.48550/arXiv.1702.06253</dc:identifier>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1702.06253</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-21 00:03:38</dcterms:dateSubmitted>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:description>arXiv:1702.06253 [cs.SI]</dc:description>
+        <prism:number>arXiv:1702.06253</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_17">
+       <rdf:value>Comment: 2016 Meaningful Play Conference</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_19">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Preprint PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/pdf/1702.06253v1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-21 00:03:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_18">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1702.06253</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2026-06-21 00:03:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+</rdf:RDF>
