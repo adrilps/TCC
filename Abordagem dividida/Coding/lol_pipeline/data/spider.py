@@ -121,8 +121,8 @@ class RiotClient:
                 retry_after = int(resp.headers.get("Retry-After", 10))
                 log.warning(f"  429 received — sleeping {retry_after}s")
                 time.sleep(retry_after)
-            elif resp.status_code == 404:
-                return None  # Player not found, skip silently
+            elif resp.status_code in (400, 404):
+                return None  # Bad/missing resource — skip silently, no retry
             else:
                 log.warning(f"  HTTP {resp.status_code} on attempt {attempt+1}: {url}")
                 time.sleep(2)
@@ -135,9 +135,17 @@ class RiotClient:
         data = self.get(url)
         return data["puuid"] if data else None
 
+    def get_summoner_id(self, puuid: str) -> str | None:
+        url = f"https://{REGION}.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/{puuid}"
+        data = self.get(url)
+        return data.get("id") if data else None
+
     def get_rank(self, puuid: str) -> str | None:
         """Returns the tier of a player's ranked solo queue entry, or None."""
-        url = f"https://{REGION}.api.riotgames.com/lol/league/v4/entries/by-puuid/{puuid}"
+        summoner_id = self.get_summoner_id(puuid)
+        if not summoner_id:
+            return None
+        url = f"https://{REGION}.api.riotgames.com/lol/league/v4/entries/by-summoner/{summoner_id}"
         entries = self.get(url)
         if not entries:
             return None
@@ -192,6 +200,9 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
         target_team = target["teamId"]           # 100 (blue) or 200 (red)
         win         = int(target["win"])
         match_id    = match_info["metadata"]["matchId"]
+        game_version = match_info["info"].get("gameVersion", "")
+        parts = game_version.split(".")
+        patch = f"{parts[0]}.{parts[1]}" if len(parts) >= 2 else game_version
 
         team_of  = {p["participantId"]: p["teamId"] for p in participants}
         team_ids = [pid for pid, tid in team_of.items() if tid == target_team]
@@ -233,7 +244,7 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
         mid_dur_min   = (mid_end_ms - early_end_ms) / 60_000
         late_dur_min  = (match_end_ms - mid_end_ms) / 60_000
 
-        # ── Frame-snapshot helpers ────────────────────────────────────────────
+        # ── Frame-snapshot helpers ─────────────────────────────────────────────
 
         def pframe_at(ts_ms: float, pid: int) -> dict:
             """Last participant frame snapshot at or before ts_ms."""
@@ -249,10 +260,6 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
             def cs(pf): return pf.get("minionsKilled", 0) + pf.get("jungleMinionsKilled", 0)
             return cs(pframe_at(end_ms, pid)) - cs(pframe_at(start_ms, pid))
 
-        def vision_delta(pid: int, start_ms: float, end_ms: float) -> float:
-            return (pframe_at(end_ms, pid).get("wardScore", 0)
-                    - pframe_at(start_ms, pid).get("wardScore", 0))
-
         def damage_delta(pid: int, start_ms: float, end_ms: float) -> float:
             def dmg(pf): return pf.get("damageStats", {}).get("totalDamageDoneToChampions", 0)
             return dmg(pframe_at(end_ms, pid)) - dmg(pframe_at(start_ms, pid))
@@ -267,8 +274,7 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
 
         # ── Snapshot-based per-phase metrics ─────────────────────────────────
 
-        phase_cs  = [cs_delta(target_id, s, e)     for s, e in phase_ranges]
-        phase_vis = [vision_delta(target_id, s, e) for s, e in phase_ranges]
+        phase_cs  = [cs_delta(target_id, s, e) for s, e in phase_ranges]
 
         # Damage share: target vs full team (including target) within each phase
         phase_target_dmg = [damage_delta(target_id, s, e) for s, e in phase_ranges]
@@ -285,6 +291,7 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
         solo_kills_ph= [0, 0, 0]
         obj_prox_num = [0, 0, 0]
         obj_prox_den = [0, 0, 0]
+        wards_ph     = [0, 0, 0]
 
         first_blood_involved = 0
         first_blood_found    = False
@@ -333,6 +340,10 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
                     if killer_id == target_id and not assists:
                         solo_kills_ph[ph] += 1
 
+                elif etype == "WARD_PLACED":
+                    if event.get("creatorId") == target_id:
+                        wards_ph[ph] += 1
+
                 elif etype in ("ELITE_MONSTER_KILL", "BUILDING_KILL"):
                     event_pos = event.get("position")
                     if event_pos:
@@ -356,7 +367,7 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
         for i, pname in enumerate(("early", "mid", "late")):
             dur = phase_durs[i]
             row[f"{pname}_cs_per_min"]          = per_min(phase_cs[i], dur)
-            row[f"{pname}_vision_per_min"]       = per_min(phase_vis[i], dur)
+            row[f"{pname}_vision_per_min"]       = per_min(wards_ph[i], dur)
             row[f"{pname}_deaths_per_min"]       = per_min(deaths_ph[i], dur)
             # Per brief: kill_participation = 0 when team had 0 kills (not NaN)
             row[f"{pname}_kill_participation"]   = (
@@ -376,6 +387,7 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
         row["early_first_blood_involved"] = first_blood_involved
         row["puuid"]              = target_puuid
         row["match_id"]           = match_id
+        row["patch"]              = patch
         row["early_duration_min"] = round(early_dur_min, 3)
         row["mid_duration_min"]   = round(mid_dur_min, 3)
         row["late_duration_min"]  = round(late_dur_min, 3)
@@ -391,12 +403,16 @@ def extract_features(match_info: dict, timeline: dict, target_puuid: str) -> dic
 # ── BFS Spider ────────────────────────────────────────────────────────────────
 
 class Spider:
-    def __init__(self, client: RiotClient):
+    def __init__(self, client: RiotClient, tiers: set | None = None,
+                 max_matches: int = MAX_MATCHES, max_players: int = MAX_PLAYERS_VISITED):
         self.client = client
-        self.visited_players: set[str] = set()   # PUUIDs already processed
-        self.visited_matches: set[str] = set()   # match IDs already processed
-        self.queue: deque[str] = deque()          # BFS queue of PUUIDs
-        self.rows: list[dict] = []                # collected feature rows
+        self.tiers = tiers if tiers is not None else TARGET_TIERS
+        self.max_matches = max_matches
+        self.max_players = max_players
+        self.visited_players: set[str] = set()
+        self.visited_matches: set[str] = set()
+        self.queue: deque[str] = deque()
+        self.rows: list[dict] = []
         self._load_progress()
 
     def _progress_path(self) -> Path:
@@ -421,36 +437,35 @@ class Spider:
                 "queue": list(self.queue),
             }, f)
 
-    def _is_gold(self, puuid: str) -> bool:
+    def _in_target_tier(self, puuid: str) -> bool:
         tier = self.client.get_rank(puuid)
-        return tier in TARGET_TIERS if tier else False
+        return tier in self.tiers if tier else False
 
     def run(self, seed_puuid: str) -> pd.DataFrame:
         if seed_puuid not in self.visited_players:
             self.queue.appendleft(seed_puuid)
 
-        log.info(f"Starting BFS | target: {MAX_MATCHES} matches, {MAX_PLAYERS_VISITED} players")
+        log.info(f"Starting BFS | target: {self.max_matches} matches, {self.max_players} players")
 
-        while self.queue and len(self.visited_matches) < MAX_MATCHES and len(self.visited_players) < MAX_PLAYERS_VISITED:
+        while self.queue and len(self.visited_matches) < self.max_matches and len(self.visited_players) < self.max_players:
             puuid = self.queue.popleft()
 
             if puuid in self.visited_players:
                 continue
 
-            # Rank gate — only process Gold players
-            if not self._is_gold(puuid):
-                log.info(f"  Skipping non-Gold player")
+            if not self._in_target_tier(puuid):
+                log.info(f"  Skipping player outside target tier(s)")
                 self.visited_players.add(puuid)
                 continue
 
             self.visited_players.add(puuid)
             match_ids = self.client.get_match_ids(puuid)
-            log.info(f"  Player {len(self.visited_players)}/{MAX_PLAYERS_VISITED} | {len(match_ids)} matches | queue size: {len(self.queue)}")
+            log.info(f"  Player {len(self.visited_players)}/{self.max_players} | {len(match_ids)} matches | queue size: {len(self.queue)}")
 
             for match_id in match_ids:
                 if match_id in self.visited_matches:
                     continue
-                if len(self.visited_matches) >= MAX_MATCHES:
+                if len(self.visited_matches) >= self.max_matches:
                     break
 
                 self.visited_matches.add(match_id)
@@ -464,7 +479,7 @@ class Spider:
                 row = extract_features(match_info, timeline, puuid)
                 if row:
                     self.rows.append(row)
-                    log.info(f"    ✓ Match {len(self.rows)} collected ({match_id})")
+                    log.info(f"    + Match {len(self.rows)} collected ({match_id})")
 
                 # Enqueue all 10 players from this match (BFS expansion)
                 for p in match_info["info"]["participants"]:
@@ -480,28 +495,63 @@ class Spider:
 
 # ── Entry point ───────────────────────────────────────────────────────────────
 
-def run_spider() -> pd.DataFrame:
-    api_key = os.getenv("RIOT_API_KEY")
+def run_spider(
+    seed: str | None = None,
+    region: str | None = None,
+    region_routing: str | None = None,
+    tiers: set | None = None,
+    max_matches: int | None = None,
+    max_players: int | None = None,
+    target_patch: str | None = None,
+    api_key: str | None = None,
+) -> pd.DataFrame:
+    api_key = api_key or os.getenv("RIOT_API_KEY")
     if not api_key:
         raise EnvironmentError("RIOT_API_KEY environment variable not set.")
+
+    # Region overrides affect the RiotClient URLs — patch the module-level names
+    # used by the client helpers (these are strings, not mutable objects, so we
+    # must update the module globals rather than passing them through).
+    import lol_pipeline.data.spider as _self
+    if region:         _self.REGION         = region
+    if region_routing: _self.REGION_ROUTING = region_routing
 
     cache   = Cache()
     limiter = RateLimiter()
     client  = RiotClient(api_key, cache, limiter)
 
-    # Resolve seed player
-    game_name, tag_line = SEED_RIOT_ID.split("#")
-    log.info(f"Resolving seed: {SEED_RIOT_ID}")
+    seed_riot_id = seed or SEED_RIOT_ID
+    game_name, tag_line = seed_riot_id.split("#")
+    log.info(f"Resolving seed: {seed_riot_id}")
     seed_puuid = client.get_puuid(game_name, tag_line)
     if not seed_puuid:
-        raise ValueError(f"Could not resolve Riot ID: {SEED_RIOT_ID}")
+        raise ValueError(f"Could not resolve Riot ID: {seed_riot_id}")
     log.info(f"Seed PUUID: {seed_puuid}")
 
-    spider = Spider(client)
+    spider = Spider(
+        client,
+        tiers=tiers or TARGET_TIERS,
+        max_matches=max_matches or MAX_MATCHES,
+        max_players=max_players or MAX_PLAYERS_VISITED,
+    )
     df = spider.run(seed_puuid)
 
-    # Save collected data
+    if target_patch and "patch" in df.columns:
+        before = len(df)
+        df = df[df["patch"] == target_patch].reset_index(drop=True)
+        log.info(f"Patch filter '{target_patch}': {len(df)}/{before} matches kept")
+
+    # Merge with existing CSV so a resume never loses previously collected rows
     out_path = Path(CACHE_DIR) / "matches.csv"
+    if out_path.exists():
+        existing = pd.read_csv(out_path)
+        if len(df) > 0:
+            df = pd.concat([existing, df]).drop_duplicates(subset=["match_id"]).reset_index(drop=True)
+            log.info(f"Merged with existing data: {len(df)} total matches")
+        else:
+            log.info("No new matches collected - existing data unchanged")
+            return existing
+
     df.to_csv(out_path, index=False)
     log.info(f"Saved to {out_path}")
 

@@ -9,11 +9,13 @@ from lol_pipeline.benchmarking.player import benchmark_player, print_benchmark
 from lol_pipeline.visualization.plots import plot_importance_comparison, plot_shap_beeswarm
 
 
-def main():
+def main(source: str = "csv", patch: str | None = None):
     print("=== LoL SHAP Pipeline ===\n")
 
     print("[1] Loading data...")
-    df = load_data(source="csv")
+    df = load_data(source=source)
+    if patch and "patch" in df.columns:
+        df = df[df["patch"] == patch].reset_index(drop=True)
     print(f"    {len(df)} matches, {len(df.columns)-1} features + win label\n")
 
     print("[2] Training per-phase models...")

@@ -36,6 +36,7 @@ XGB_PARAMS = {
     "eval_metric": "logloss",
     "random_state": 42,
     "verbosity": 0,
+    "base_score": 0.5,  # explicit value avoids XGBoost 2.x / SHAP parse bug
 }
 
 # ── Data generation defaults ──────────────────────────────────────────────────
@@ -44,7 +45,7 @@ RANDOM_SEED = 42
 TEST_SIZE = 0.2
 
 # ── Output paths ──────────────────────────────────────────────────────────────
-OUTPUT_DIR = "/mnt/user-data/outputs"
+OUTPUT_DIR = "outputs"
 
 # ── Spider / BFS collector settings ──────────────────────────────────────────
 REGION = "br1"                        # Riot platform region
