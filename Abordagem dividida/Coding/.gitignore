@@ -1,0 +1,7 @@
+cache/
+lol_pipeline/cache/
+__pycache__/
+*.pyc
+.env
+.claude/
+outputs/

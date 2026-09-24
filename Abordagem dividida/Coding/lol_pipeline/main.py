@@ -34,30 +34,15 @@ def main(source: str = "csv", patch: str | None = None):
     print("[6] Example player benchmark...")
     # A slightly below-average Gold mid-laner: weak early vision and kill participation,
     # decent CS, low objective proximity — representative of a typical improvement case.
-    example_player = {
-        "early_cs_per_min":           6.0,
-        "early_vision_per_min":       0.7,
-        "early_deaths_per_min":       0.12,
-        "early_kill_participation":   0.35,
-        "early_damage_share":         0.21,
-        "early_solo_kills":           0,
-        "early_objective_proximity":  0.25,
-        "early_first_blood_involved": 0,
-        "mid_cs_per_min":             6.5,
-        "mid_vision_per_min":         1.0,
-        "mid_deaths_per_min":         0.10,
-        "mid_kill_participation":     0.50,
-        "mid_damage_share":           0.25,
-        "mid_solo_kills":             1,
-        "mid_objective_proximity":    0.35,
-        "late_cs_per_min":            5.5,
-        "late_vision_per_min":        1.2,
-        "late_deaths_per_min":        0.08,
-        "late_kill_participation":    0.55,
-        "late_damage_share":          0.26,
-        "late_solo_kills":            0,
-        "late_objective_proximity":   0.30,
-    }
+    # Jogador de exemplo: mediana da populacao com um deficit deliberado
+    # nas metricas sociais, para ilustrar a saida do metodo.
+    from lol_pipeline.config import PHASE_FEATURES
+    todas = [f for fs in PHASE_FEATURES.values() for f in fs]
+    example_player = df[todas].median(numeric_only=True).to_dict()
+    for k in list(example_player):
+        if "participacoes" in k or "solo_kills" in k:
+            example_player[k] = example_player[k] * 0.6
+
     gaps = benchmark_player(example_player, df, shap_results)
     print_benchmark(gaps)
 

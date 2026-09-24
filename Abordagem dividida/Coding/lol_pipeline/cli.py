@@ -77,8 +77,8 @@ def menu_run_analysis():
 
     patch_filter = None
     if source == "csv":
-        from lol_pipeline.config import CACHE_DIR
-        csv_path = Path(CACHE_DIR) / "matches.csv"
+        from lol_pipeline.config import MATCHES_CSV
+        csv_path = Path(MATCHES_CSV)
         if not csv_path.exists():
             print("\n  No matches.csv found. Collect data first.")
             input("  Press Enter to go back...")
@@ -225,8 +225,8 @@ def menu_dataset_info():
     clear()
     header("Dataset Info")
 
-    from lol_pipeline.config import CACHE_DIR
-    csv_path = Path(CACHE_DIR) / "matches.csv"
+    from lol_pipeline.config import MATCHES_CSV
+    csv_path = Path(MATCHES_CSV)
 
     if not csv_path.exists():
         print("\n  No matches.csv found.")

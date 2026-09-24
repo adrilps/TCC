@@ -1,0 +1,45 @@
+elo,fase,metrica,importancia,auc_da_fase
+Ouro,Early,Abates solo,0.213,0.6039
+Ouro,Early,Mortes/min,0.1831,0.6039
+Ouro,Early,Visão (wards/min),0.1522,0.6039
+Ouro,Early,Participação em abates,0.1491,0.6039
+Ouro,Early,Farm (CS/min),0.1132,0.6039
+Ouro,Early,Parcela de dano da equipe,0.0931,0.6039
+Ouro,Early,Proximidade de objetivos,0.0782,0.6039
+Ouro,Early,Envolvimento no first blood,0.0182,0.6039
+Ouro,Mid,Mortes/min,0.3418,0.6827
+Ouro,Mid,Participação em abates,0.1459,0.6827
+Ouro,Mid,Farm (CS/min),0.1401,0.6827
+Ouro,Mid,Abates solo,0.1358,0.6827
+Ouro,Mid,Visão (wards/min),0.1115,0.6827
+Ouro,Mid,Parcela de dano da equipe,0.0693,0.6827
+Ouro,Mid,Proximidade de objetivos,0.0555,0.6827
+Ouro,Late,Mortes/min,0.4323,0.7697
+Ouro,Late,Participação em abates,0.2117,0.7697
+Ouro,Late,Farm (CS/min),0.0982,0.7697
+Ouro,Late,Visão (wards/min),0.0874,0.7697
+Ouro,Late,Proximidade de objetivos,0.0706,0.7697
+Ouro,Late,Parcela de dano da equipe,0.0501,0.7697
+Ouro,Late,Abates solo,0.0497,0.7697
+Diamante,Early,Participação em abates,0.31,0.5833
+Diamante,Early,Parcela de dano da equipe,0.248,0.5833
+Diamante,Early,Farm (CS/min),0.1568,0.5833
+Diamante,Early,Visão (wards/min),0.1525,0.5833
+Diamante,Early,Mortes/min,0.0739,0.5833
+Diamante,Early,Proximidade de objetivos,0.0335,0.5833
+Diamante,Early,Abates solo,0.0253,0.5833
+Diamante,Early,Envolvimento no first blood,0.0,0.5833
+Diamante,Mid,Mortes/min,0.3012,0.625
+Diamante,Mid,Farm (CS/min),0.2507,0.625
+Diamante,Mid,Proximidade de objetivos,0.1606,0.625
+Diamante,Mid,Participação em abates,0.1027,0.625
+Diamante,Mid,Abates solo,0.0791,0.625
+Diamante,Mid,Parcela de dano da equipe,0.0552,0.625
+Diamante,Mid,Visão (wards/min),0.0506,0.625
+Diamante,Late,Participação em abates,0.2733,0.7333
+Diamante,Late,Proximidade de objetivos,0.2668,0.7333
+Diamante,Late,Mortes/min,0.209,0.7333
+Diamante,Late,Farm (CS/min),0.124,0.7333
+Diamante,Late,Visão (wards/min),0.068,0.7333
+Diamante,Late,Parcela de dano da equipe,0.0533,0.7333
+Diamante,Late,Abates solo,0.0056,0.7333

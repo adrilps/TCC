@@ -1,0 +1,16 @@
+{
+  "congelado_em": "2026-09-03 20:10",
+  "patch": "16.17",
+  "regiao": "br1",
+  "fila": "RANKED_SOLO_5x5 (420)",
+  "rota": "MIDDLE",
+  "elo": "GOLD",
+  "partidas": 2045,
+  "jogadores_unicos": 933,
+  "taxa_vitoria": 0.4963,
+  "sem_fase_final": 318,
+  "campeoes_distintos": 113,
+  "duracao_media_min": 28.9,
+  "md5": "d9fc87d34b9402961570d764bb9527ea",
+  "variaveis": "8 metricas individuais por fase, identicas nas tres; razoes e metricas de desfecho coletivo descartadas"
+}

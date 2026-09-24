@@ -1,0 +1,24 @@
+@echo off
+cd /d "%~dp0"
+echo ================================================
+echo  Coleta TCC - o PC sera DESLIGADO ao terminar
+echo ================================================
+echo.
+rem Impede o Windows de suspender durante a coleta (na tomada)
+powercfg /change standby-timeout-ac 0
+echo Validando chave e iniciando a coleta...
+echo Acompanhe pelo arquivo collect_log.txt (aguarde ~30s e confira a 1a linha)
+py -u collect.py 12000 >> collect_log.txt 2>&1
+if errorlevel 2 goto badkey
+echo.
+echo Coleta encerrada. O PC desliga em 2 minutos.
+echo (Para cancelar o desligamento: shutdown /a)
+shutdown /s /t 120 /c "Coleta do TCC encerrada - desligando o PC"
+goto end
+:badkey
+echo.
+echo  CHAVE DA API INVALIDA OU EXPIRADA - o PC NAO sera desligado.
+echo  Renove em developer.riotgames.com, cole em lol_pipeline\.env e rode de novo.
+echo.
+pause
+:end

@@ -54,9 +54,8 @@ def load_data(source: str = "synthetic", **kwargs) -> pd.DataFrame:
     if source == "synthetic":
         return generate_synthetic_data(**kwargs)
     elif source == "csv":
-        from pathlib import Path
-        from lol_pipeline.config import CACHE_DIR
-        path = kwargs.get("path", str(Path(CACHE_DIR) / "matches.csv"))
+        from lol_pipeline.config import MATCHES_CSV
+        path = kwargs.get("path", MATCHES_CSV)
         return pd.read_csv(path)
     elif source == "api":
         from lol_pipeline.data.spider import run_spider
